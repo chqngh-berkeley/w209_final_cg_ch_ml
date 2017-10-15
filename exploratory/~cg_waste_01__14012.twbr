@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0728.2252                               -->
+<workbook source-build='10.3.2 (10300.17.0728.2252)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Policy &amp; Program Table (managing_transforming_waste_streams_2)' inline='true' name='federated.1sljpto0na8rq51ebmf2f09m0npf' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='managing_transforming_waste_streams_2' name='excel-direct.1gnpa0a1r6tpt715c1bw60f1xq6v'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Gutwein/Google Drive/MIDS/W209 Data Visualization/assignments/final_project/managing_transforming_waste_streams_2.xls' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1gnpa0a1r6tpt715c1bw60f1xq6v' name='Policy &amp; Program Table' table='[&apos;Policy &amp; Program Table$&apos;]' type='table'>
+          <columns gridOrigin='A1:Z102:no:A1:Z102:1' header='no' lost='0' outcome='1' processed='100'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Diversion Potential' ordinal='1' />
+            <column datatype='string' name='Upstream Impacts' ordinal='2' />
+            <column datatype='string' name='Local Authority' ordinal='3' />
+            <column datatype='string' name='Receptivity' ordinal='4' />
+            <column datatype='string' name='Staff Knowledge' ordinal='5' />
+            <column datatype='string' name='Community Led Initiatives' ordinal='6' />
+            <column datatype='string' name='Policy or Program' ordinal='7' />
+            <column datatype='string' name='Policy or Program Description' ordinal='8' />
+            <column datatype='string' name='Sector(s)' ordinal='9' />
+            <column datatype='string' name='Material or Product Group' ordinal='10' />
+            <column datatype='string' name='Goals/Plans' ordinal='11' />
+            <column datatype='string' name='Requirements' ordinal='12' />
+            <column datatype='string' name='Incentives' ordinal='13' />
+            <column datatype='string' name='Fees' ordinal='14' />
+            <column datatype='string' name='Outreach/Education' ordinal='15' />
+            <column datatype='string' name='Training' ordinal='16' />
+            <column datatype='string' name='Partnerships' ordinal='17' />
+            <column datatype='string' name='Research/Information' ordinal='18' />
+            <column datatype='string' name='Reduction/Prevention' ordinal='19' />
+            <column datatype='string' name='Reuse' ordinal='20' />
+            <column datatype='string' name='Recovery/Collection' ordinal='21' />
+            <column datatype='string' name='Recovery/Drop-Off' ordinal='22' />
+            <column datatype='string' name='Processing' ordinal='23' />
+            <column datatype='string' name='Markets' ordinal='24' />
+            <column datatype='string' name='Purchase/Consumption' ordinal='25' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diversion Potential</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Diversion Potential]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Diversion Potential</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Upstream Impacts</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Upstream Impacts]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Upstream Impacts</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Local Authority</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Local Authority]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Local Authority</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Receptivity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Receptivity]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Receptivity</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Staff Knowledge</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Staff Knowledge]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Staff Knowledge</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Community Led Initiatives</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Community Led Initiatives]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Community Led Initiatives</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy or Program</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Policy or Program]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Policy or Program</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy or Program Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Policy or Program Description]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Policy or Program Description</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector(s)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sector(s)]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Sector(s)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Material or Product Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Material or Product Group]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Material or Product Group</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goals/Plans</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Goals/Plans]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Goals/Plans</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Requirements</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Requirements]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Requirements</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incentives</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Incentives]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Incentives</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fees</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Fees]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Fees</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outreach/Education</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Outreach/Education]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Outreach/Education</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Training</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Training]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Training</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partnerships</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Partnerships]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Partnerships</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Research/Information</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Research/Information]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Research/Information</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reduction/Prevention</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reduction/Prevention]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Reduction/Prevention</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reuse</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reuse]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Reuse</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovery/Collection</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Recovery/Collection]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Recovery/Collection</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovery/Drop-Off</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Recovery/Drop-Off]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Recovery/Drop-Off</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Processing</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Processing]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Processing</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Markets</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Markets]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Markets</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purchase/Consumption</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Purchase/Consumption]</local-name>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias>Purchase/Consumption</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Policy &amp; Program Table]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Z102:no:A1:Z102:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>100</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.465649' measure-ordering='alphabetic' measure-percentage='0.534351' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Policy &amp; Program Table (managing_transforming_waste_streams_2)' name='federated.1sljpto0na8rq51ebmf2f09m0npf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sljpto0na8rq51ebmf2f09m0npf'>
+            <column datatype='string' name='[Community Led Initiatives]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Diversion Potential]' role='dimension' type='nominal' />
+            <column-instance column='[Community Led Initiatives]' derivation='None' name='[none:Community Led Initiatives:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diversion Potential]' derivation='None' name='[none:Diversion Potential:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1sljpto0na8rq51ebmf2f09m0npf].[none:Diversion Potential:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1sljpto0na8rq51ebmf2f09m0npf].[none:Community Led Initiatives:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>

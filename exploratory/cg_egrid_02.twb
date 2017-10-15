@@ -1,0 +1,2496 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0728.2252                               -->
+<workbook original-version='10.3' source-build='10.3.2 (10300.17.0728.2252)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ST14 (eGRID2014_Data_v2)' inline='true' name='federated.054qz8d0dejun017crn5g0wcm39k' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='eGRID2014_Data_v2' name='excel-direct.0dh87er1t6f99l1036qrt1cky0sy'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Gutwein/Desktop/data_dump/egrid_2014/eGRID2014_Data_v2.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0dh87er1t6f99l1036qrt1cky0sy' name='ST14' table='[ST14$]' type='table'>
+          <columns gridOrigin='A1:DH53:no:A1:DH53:0' header='yes' outcome='2'>
+            <column datatype='string' name='State abbreviation' ordinal='0' />
+            <column datatype='string' name='FIPS State code' ordinal='1' />
+            <column datatype='real' name='State nameplate capacity (MW)' ordinal='2' />
+            <column datatype='real' name='State annual heat input from combustion (MMBtu)' ordinal='3' />
+            <column datatype='real' name='State ozone season heat input from combustion (MMBtu)' ordinal='4' />
+            <column datatype='real' name='State total annual heat input (MMBtu)' ordinal='5' />
+            <column datatype='real' name='State total ozone season heat input (MMBtu)' ordinal='6' />
+            <column datatype='real' name='State annual net generation (MWh)' ordinal='7' />
+            <column datatype='real' name='State ozone season net generation (MWh)' ordinal='8' />
+            <column datatype='real' name='State annual NOx emissions (tons)' ordinal='9' />
+            <column datatype='real' name='State ozone season NOx emissions (tons)' ordinal='10' />
+            <column datatype='real' name='State annual SO2 emissions (tons)' ordinal='11' />
+            <column datatype='real' name='State annual CO2 emissions (tons)' ordinal='12' />
+            <column datatype='real' name='State annual CH4 emissions (lbs)' ordinal='13' />
+            <column datatype='real' name='State annual N2O emissions (lbs)' ordinal='14' />
+            <column datatype='real' name='State annual CO2 equivalent emissions (tons)' ordinal='15' />
+            <column datatype='string' name='State annual Hg emissions (lbs)' ordinal='16' />
+            <column datatype='real' name='State annual NOx total output emission rate (lb/MWh)' ordinal='17' />
+            <column datatype='real' name='State ozone season NOx total output emission rate (lb/MWh)' ordinal='18' />
+            <column datatype='real' name='State annual SO2 total output emission rate (lb/MWh)' ordinal='19' />
+            <column datatype='real' name='State annual CO2 total output emission rate (lb/MWh)' ordinal='20' />
+            <column datatype='real' name='State annual CH4 total output emission rate (lb/GWh)' ordinal='21' />
+            <column datatype='real' name='State annual N2O total output emission rate (lb/GWh)' ordinal='22' />
+            <column datatype='real' name='State annual CO2 equivalent total output emission rate (lb/MWh)' ordinal='23' />
+            <column datatype='string' name='State annual Hg total output emission rate (lb/GWh)' ordinal='24' />
+            <column datatype='real' name='State annual NOx input emission rate (lb/MMBtu)' ordinal='25' />
+            <column datatype='real' name='State ozone season NOx input emission rate (lb/MMBtu)' ordinal='26' />
+            <column datatype='real' name='State annual SO2 input emission rate (lb/MMBtu)' ordinal='27' />
+            <column datatype='real' name='State annual CO2 input emission rate (lb/MMBtu)' ordinal='28' />
+            <column datatype='string' name='State annual Hg input emission rate (lb/BBtu)' ordinal='29' />
+            <column datatype='real' name='State annual NOx combustion output emission rate (lb/MWh)' ordinal='30' />
+            <column datatype='real' name='State ozone season NOx combustion output emission rate (lb/MWh)' ordinal='31' />
+            <column datatype='real' name='State annual SO2 combustion output emission rate (lb/MWh)' ordinal='32' />
+            <column datatype='real' name='State annual CO2 combustion output emission rate (lb/MWh)' ordinal='33' />
+            <column datatype='real' name='State annual CH4 combustion output emission rate (lb/GWh)' ordinal='34' />
+            <column datatype='real' name='State annual N2O combustion output emission rate (lb/GWh)' ordinal='35' />
+            <column datatype='string' name='State annual Hg combustion output emission rate (lb/GWh)' ordinal='36' />
+            <column datatype='real' name='State annual NOx coal output emission rate (lb/MWh)' ordinal='37' />
+            <column datatype='real' name='State annual NOx oil output emission rate (lb/MWh)' ordinal='38' />
+            <column datatype='real' name='State annual NOx gas output emission rate (lb/MWh)' ordinal='39' />
+            <column datatype='real' name='State annual NOx fossil fuel output emission rate (lb/MWh)' ordinal='40' />
+            <column datatype='real' name='State ozone season NOx coal output emission rate (lb/MWh)' ordinal='41' />
+            <column datatype='string' name='State ozone season NOx oil output emission rate (lb/MWh)' ordinal='42' />
+            <column datatype='real' name='State ozone season NOx gas output emission rate (lb/MWh)' ordinal='43' />
+            <column datatype='real' name='State ozone season Nox fossil fuel output emission rate (lb/MWh)' ordinal='44' />
+            <column datatype='real' name='State annual SO2 coal output emission rate (lb/MWh)' ordinal='45' />
+            <column datatype='real' name='State annual SO2 oil output emission rate (lb/MWh)' ordinal='46' />
+            <column datatype='real' name='State annual SO2 gas output emission rate (lb/MWh)' ordinal='47' />
+            <column datatype='real' name='State annual SO2 fossil fuel output emission rate (lb/MWh)' ordinal='48' />
+            <column datatype='real' name='State annual CO2 coal output emission rate (lb/MWh)' ordinal='49' />
+            <column datatype='real' name='State annual CO2 oil output emission rate (lb/MWh)' ordinal='50' />
+            <column datatype='real' name='State annual CO2 gas output emission rate (lb/MWh)' ordinal='51' />
+            <column datatype='real' name='State annual CO2 fossil fuel output emission rate (lb/MWh)' ordinal='52' />
+            <column datatype='string' name='State annual Hg coal output emission rate (lb/GWh)' ordinal='53' />
+            <column datatype='string' name='State annual Hg fossil fuel output emission rate (lb/GWh)' ordinal='54' />
+            <column datatype='real' name='State annual NOx coal input emission rate (lb/MMBtu)' ordinal='55' />
+            <column datatype='real' name='State annual NOx oil input emission rate (lb/MMBtu)' ordinal='56' />
+            <column datatype='real' name='State annual NOx gas input emission rate (lb/MMBtu)' ordinal='57' />
+            <column datatype='real' name='State annual NOx fossil fuel input emission rate (lb/MMBtu)' ordinal='58' />
+            <column datatype='real' name='State ozone season NOx coal input emission rate (lb/MMBtu)' ordinal='59' />
+            <column datatype='real' name='State ozone season NOx oil input emission rate (lb/MMBtu)' ordinal='60' />
+            <column datatype='real' name='State ozone season NOx gas input emission rate (lb/MMBtu)' ordinal='61' />
+            <column datatype='real' name='State ozone season NOx fossil fuel input emission rate (lb/MMBtu)' ordinal='62' />
+            <column datatype='real' name='State annual SO2 coal input emission rate (lb/MMBtu)' ordinal='63' />
+            <column datatype='real' name='State annual SO2 oil input emission rate (lb/MMBtu)' ordinal='64' />
+            <column datatype='real' name='State annual SO2 gas input emission rate (lb/MMBtu)' ordinal='65' />
+            <column datatype='real' name='State annual SO2 fossil fuel input emission rate (lb/MMBtu)' ordinal='66' />
+            <column datatype='real' name='State annual CO2 coal input emission rate (lb/MMBtu)' ordinal='67' />
+            <column datatype='real' name='State annual CO2 oil input emission rate (lb/MMBtu)' ordinal='68' />
+            <column datatype='real' name='State annual CO2 gas input emission rate (lb/MMBtu)' ordinal='69' />
+            <column datatype='real' name='State annual CO2 fossil fuel input emission rate (lb/MMBtu)' ordinal='70' />
+            <column datatype='string' name='State annual Hg coal input emission rate (lb/BBtu)' ordinal='71' />
+            <column datatype='string' name='State annual Hg fossil fuel input emission rate (lb/BBtu)' ordinal='72' />
+            <column datatype='real' name='State annual NOx non-baseload output emission rate (lb/MWh)' ordinal='73' />
+            <column datatype='real' name='State ozone season NOx non-baseload output emission rate (lb/MWh)' ordinal='74' />
+            <column datatype='real' name='State annual SO2 non-baseload output emission rate (lb/MWh)' ordinal='75' />
+            <column datatype='real' name='State annual CO2 non-baseload  output emission rate (lb/MWh)' ordinal='76' />
+            <column datatype='real' name='State annual CH4 non-baseload output emission rate (lb/GWh)' ordinal='77' />
+            <column datatype='real' name='State annual N2O non-baseload output emission rate (lb/GWh)' ordinal='78' />
+            <column datatype='string' name='State annual Hg non-baseload  output emission rate (lb/GWh)' ordinal='79' />
+            <column datatype='real' name='State annual coal net generation (MWh)' ordinal='80' />
+            <column datatype='real' name='State annual oil net generation (MWh)' ordinal='81' />
+            <column datatype='real' name='State annual gas net generation (MWh)' ordinal='82' />
+            <column datatype='integer' name='State annual nuclear net generation (MWh)' ordinal='83' />
+            <column datatype='real' name='State annual hydro net generation (MWh)' ordinal='84' />
+            <column datatype='real' name='State annual biomass net generation (MWh)' ordinal='85' />
+            <column datatype='real' name='State annual wind net generation (MWh)' ordinal='86' />
+            <column datatype='real' name='State annual solar net generation (MWh)' ordinal='87' />
+            <column datatype='integer' name='State annual geothermal net generation (MWh)' ordinal='88' />
+            <column datatype='real' name='State annual other fossil net generation (MWh)' ordinal='89' />
+            <column datatype='real' name='State annual other unknown/ purchased fuel net generation (MWh)' ordinal='90' />
+            <column datatype='real' name='State annual total nonrenewables net generation (MWh)' ordinal='91' />
+            <column datatype='real' name='State annual total renewables net generation (MWh)' ordinal='92' />
+            <column datatype='real' name='State annual total nonhydro renewables net generation (MWh)' ordinal='93' />
+            <column datatype='real' name='State annual total combustion net generation (MWh)' ordinal='94' />
+            <column datatype='real' name='State annual total noncombustion net generation (MWh)' ordinal='95' />
+            <column datatype='real' name='State coal generation percent (resource mix)' ordinal='96' />
+            <column datatype='real' name='State oil generation percent (resource mix)' ordinal='97' />
+            <column datatype='real' name='State gas generation percent (resource mix)' ordinal='98' />
+            <column datatype='real' name='State nuclear generation percent (resource mix)' ordinal='99' />
+            <column datatype='real' name='State hydro generation percent (resource mix)' ordinal='100' />
+            <column datatype='real' name='State biomass generation percent (resource mix)' ordinal='101' />
+            <column datatype='real' name='State wind generation percent (resource mix)' ordinal='102' />
+            <column datatype='real' name='State solar generation percent (resource mix)' ordinal='103' />
+            <column datatype='real' name='State geothermal generation percent (resource mix)' ordinal='104' />
+            <column datatype='real' name='State other fossil  generation percent (resource mix)' ordinal='105' />
+            <column datatype='real' name='State other unknown/ purchased fuel generation percent (resource mix)' ordinal='106' />
+            <column datatype='real' name='State total nonrenewables generation percent (resource mix)' ordinal='107' />
+            <column datatype='real' name='State total renewables generation percent (resource mix)' ordinal='108' />
+            <column datatype='real' name='State total nonhydro renewables generation percent (resource mix)' ordinal='109' />
+            <column datatype='real' name='State total combustion generation percent (resource mix)' ordinal='110' />
+            <column datatype='real' name='State total noncombustion generation percent (resource mix)' ordinal='111' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>State abbreviation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State abbreviation]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State abbreviation</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS State code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FIPS State code]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>FIPS State code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State nameplate capacity (MW)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State nameplate capacity (MW)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State nameplate capacity (MW)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual heat input from combustion (MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual heat input from combustion (MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual heat input from combustion (MMBtu)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season heat input from combustion (MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season heat input from combustion (MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season heat input from combustion (MMBtu)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State total annual heat input (MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State total annual heat input (MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State total annual heat input (MMBtu)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State total ozone season heat input (MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State total ozone season heat input (MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State total ozone season heat input (MMBtu)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual net generation (MWh)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season net generation (MWh)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx emissions (tons)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx emissions (tons)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx emissions (tons)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx emissions (tons)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx emissions (tons)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx emissions (tons)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 emissions (tons)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 emissions (tons)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 emissions (tons)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 emissions (tons)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 emissions (tons)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 emissions (tons)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CH4 emissions (lbs)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CH4 emissions (lbs)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CH4 emissions (lbs)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual N2O emissions (lbs)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual N2O emissions (lbs)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual N2O emissions (lbs)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 equivalent emissions (tons)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 equivalent emissions (tons)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 equivalent emissions (tons)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg emissions (lbs)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg emissions (lbs)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg emissions (lbs)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx total output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx total output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx total output emission rate (lb/MWh)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx total output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx total output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx total output emission rate (lb/MWh)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 total output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 total output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 total output emission rate (lb/MWh)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 total output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 total output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 total output emission rate (lb/MWh)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CH4 total output emission rate (lb/GWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CH4 total output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CH4 total output emission rate (lb/GWh)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual N2O total output emission rate (lb/GWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual N2O total output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual N2O total output emission rate (lb/GWh)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 equivalent total output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 equivalent total output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 equivalent total output emission rate (lb/MWh)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg total output emission rate (lb/GWh)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg total output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg total output emission rate (lb/GWh)</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg input emission rate (lb/BBtu)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg input emission rate (lb/BBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg input emission rate (lb/BBtu)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx combustion output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx combustion output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx combustion output emission rate (lb/MWh)</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx combustion output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx combustion output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx combustion output emission rate (lb/MWh)</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 combustion output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 combustion output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 combustion output emission rate (lb/MWh)</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 combustion output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 combustion output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 combustion output emission rate (lb/MWh)</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CH4 combustion output emission rate (lb/GWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CH4 combustion output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CH4 combustion output emission rate (lb/GWh)</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual N2O combustion output emission rate (lb/GWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual N2O combustion output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual N2O combustion output emission rate (lb/GWh)</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg combustion output emission rate (lb/GWh)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg combustion output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg combustion output emission rate (lb/GWh)</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx coal output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx coal output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx coal output emission rate (lb/MWh)</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx oil output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx oil output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx oil output emission rate (lb/MWh)</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx gas output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx gas output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx gas output emission rate (lb/MWh)</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx fossil fuel output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx fossil fuel output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx fossil fuel output emission rate (lb/MWh)</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx coal output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx coal output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx coal output emission rate (lb/MWh)</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx oil output emission rate (lb/MWh)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State ozone season NOx oil output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx oil output emission rate (lb/MWh)</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx gas output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx gas output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx gas output emission rate (lb/MWh)</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season Nox fossil fuel output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season Nox fossil fuel output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season Nox fossil fuel output emission rate (lb/MWh)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 coal output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 coal output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 coal output emission rate (lb/MWh)</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 oil output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 oil output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 oil output emission rate (lb/MWh)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 gas output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 gas output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 gas output emission rate (lb/MWh)</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 fossil fuel output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 fossil fuel output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 fossil fuel output emission rate (lb/MWh)</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 coal output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 coal output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 coal output emission rate (lb/MWh)</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 oil output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 oil output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 oil output emission rate (lb/MWh)</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 gas output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 gas output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 gas output emission rate (lb/MWh)</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 fossil fuel output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 fossil fuel output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 fossil fuel output emission rate (lb/MWh)</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg coal output emission rate (lb/GWh)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg coal output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg coal output emission rate (lb/GWh)</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg fossil fuel output emission rate (lb/GWh)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg fossil fuel output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg fossil fuel output emission rate (lb/GWh)</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx coal input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx coal input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx coal input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx oil input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx oil input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx oil input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx gas input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx gas input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx gas input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx fossil fuel input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx fossil fuel input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx fossil fuel input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx coal input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx coal input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx coal input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx oil input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx oil input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx oil input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx gas input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx gas input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx gas input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx fossil fuel input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx fossil fuel input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx fossil fuel input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 coal input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 coal input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 coal input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 oil input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 oil input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 oil input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 gas input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 gas input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 gas input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 fossil fuel input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 fossil fuel input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 fossil fuel input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 coal input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 coal input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 coal input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 oil input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 oil input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 oil input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 gas input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 gas input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 gas input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 fossil fuel input emission rate (lb/MMBtu)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 fossil fuel input emission rate (lb/MMBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 fossil fuel input emission rate (lb/MMBtu)</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg coal input emission rate (lb/BBtu)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg coal input emission rate (lb/BBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg coal input emission rate (lb/BBtu)</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg fossil fuel input emission rate (lb/BBtu)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg fossil fuel input emission rate (lb/BBtu)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg fossil fuel input emission rate (lb/BBtu)</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual NOx non-baseload output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual NOx non-baseload output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual NOx non-baseload output emission rate (lb/MWh)</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State ozone season NOx non-baseload output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State ozone season NOx non-baseload output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State ozone season NOx non-baseload output emission rate (lb/MWh)</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual SO2 non-baseload output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual SO2 non-baseload output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual SO2 non-baseload output emission rate (lb/MWh)</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CO2 non-baseload  output emission rate (lb/MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CO2 non-baseload  output emission rate (lb/MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CO2 non-baseload  output emission rate (lb/MWh)</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual CH4 non-baseload output emission rate (lb/GWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual CH4 non-baseload output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual CH4 non-baseload output emission rate (lb/GWh)</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual N2O non-baseload output emission rate (lb/GWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual N2O non-baseload output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual N2O non-baseload output emission rate (lb/GWh)</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual Hg non-baseload  output emission rate (lb/GWh)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State annual Hg non-baseload  output emission rate (lb/GWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual Hg non-baseload  output emission rate (lb/GWh)</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual coal net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual coal net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual coal net generation (MWh)</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual oil net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual oil net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual oil net generation (MWh)</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual gas net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual gas net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual gas net generation (MWh)</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual nuclear net generation (MWh)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State annual nuclear net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual nuclear net generation (MWh)</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual hydro net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual hydro net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual hydro net generation (MWh)</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual biomass net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual biomass net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual biomass net generation (MWh)</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual wind net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual wind net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual wind net generation (MWh)</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual solar net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual solar net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual solar net generation (MWh)</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual geothermal net generation (MWh)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State annual geothermal net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual geothermal net generation (MWh)</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual other fossil net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual other fossil net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual other fossil net generation (MWh)</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual other unknown/ purchased fuel net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual other unknown/ purchased fuel net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual other unknown/ purchased fuel net generation (MWh)</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual total nonrenewables net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual total nonrenewables net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual total nonrenewables net generation (MWh)</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual total renewables net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual total renewables net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual total renewables net generation (MWh)</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual total nonhydro renewables net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual total nonhydro renewables net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual total nonhydro renewables net generation (MWh)</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual total combustion net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual total combustion net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual total combustion net generation (MWh)</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State annual total noncombustion net generation (MWh)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State annual total noncombustion net generation (MWh)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State annual total noncombustion net generation (MWh)</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State coal generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State coal generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State coal generation percent (resource mix)</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State oil generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State oil generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State oil generation percent (resource mix)</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State gas generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State gas generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State gas generation percent (resource mix)</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State nuclear generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State nuclear generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State nuclear generation percent (resource mix)</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State hydro generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State hydro generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State hydro generation percent (resource mix)</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State biomass generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State biomass generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State biomass generation percent (resource mix)</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State wind generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State wind generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State wind generation percent (resource mix)</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State solar generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State solar generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State solar generation percent (resource mix)</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State geothermal generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State geothermal generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State geothermal generation percent (resource mix)</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State other fossil  generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State other fossil  generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State other fossil  generation percent (resource mix)</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State other unknown/ purchased fuel generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State other unknown/ purchased fuel generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State other unknown/ purchased fuel generation percent (resource mix)</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State total nonrenewables generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State total nonrenewables generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State total nonrenewables generation percent (resource mix)</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State total renewables generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State total renewables generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State total renewables generation percent (resource mix)</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State total nonhydro renewables generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State total nonhydro renewables generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State total nonhydro renewables generation percent (resource mix)</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State total combustion generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State total combustion generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State total combustion generation percent (resource mix)</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State total noncombustion generation percent (resource mix)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State total noncombustion generation percent (resource mix)]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>State total noncombustion generation percent (resource mix)</remote-alias>
+            <ordinal>111</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:DH53:no:A1:DH53:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[FIPS State code]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[State abbreviation]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg coal input emission rate (lb/BBtu)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg coal output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg combustion output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg emissions (lbs)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg fossil fuel input emission rate (lb/BBtu)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg fossil fuel output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg input emission rate (lb/BBtu)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg non-baseload  output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State annual Hg total output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State ozone season NOx oil output emission rate (lb/MWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.6238' measure-ordering='alphabetic' measure-percentage='0.3762' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>State Percentage Non-Renewable Energy Sources</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ST14 (eGRID2014_Data_v2)' name='federated.054qz8d0dejun017crn5g0wcm39k' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.054qz8d0dejun017crn5g0wcm39k'>
+            <column datatype='string' name='[State abbreviation]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' name='[State total nonrenewables generation percent (resource mix)]' role='measure' type='quantitative' />
+            <column-instance column='[State total nonrenewables generation percent (resource mix)]' derivation='Avg' name='[avg:State total nonrenewables generation percent (resource mix):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State abbreviation]' derivation='None' name='[none:State abbreviation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.054qz8d0dejun017crn5g0wcm39k].[avg:State total nonrenewables generation percent (resource mix):qk]' />
+              <color column='[federated.054qz8d0dejun017crn5g0wcm39k].[avg:State total nonrenewables generation percent (resource mix):qk]' />
+              <text column='[federated.054qz8d0dejun017crn5g0wcm39k].[none:State abbreviation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>State Total Power Generated by Wind Turbines (MWh)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ST14 (eGRID2014_Data_v2)' name='federated.054qz8d0dejun017crn5g0wcm39k' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.054qz8d0dejun017crn5g0wcm39k'>
+            <column datatype='string' name='[State abbreviation]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' name='[State annual wind net generation (MWh)]' role='measure' type='quantitative' />
+            <column-instance column='[State abbreviation]' derivation='None' name='[none:State abbreviation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State annual wind net generation (MWh)]' derivation='Sum' name='[sum:State annual wind net generation (MWh):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.054qz8d0dejun017crn5g0wcm39k].[sum:State annual wind net generation (MWh):qk]' />
+              <color column='[federated.054qz8d0dejun017crn5g0wcm39k].[sum:State annual wind net generation (MWh):qk]' />
+              <text column='[federated.054qz8d0dejun017crn5g0wcm39k].[none:State abbreviation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='5' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='3' type='layout-basic' w='84000' x='0' y='0'>
+              <zone h='50000' id='1' name='Sheet 1' w='84000' x='0' y='0' />
+              <zone h='50000' id='7' name='Sheet 2' w='84000' x='0' y='50000' />
+            </zone>
+            <zone fixed-size='160' h='100000' id='4' is-fixed='true' param='vert' type='layout-flow' w='16000' x='84000' y='0'>
+              <zone h='10625' id='6' name='Sheet 1' pane-specification-id='0' param='[federated.054qz8d0dejun017crn5g0wcm39k].[avg:State total nonrenewables generation percent (resource mix):qk]' type='color' w='16000' x='84000' y='0' />
+              <zone h='10125' id='8' name='Sheet 2' pane-specification-id='0' param='[federated.054qz8d0dejun017crn5g0wcm39k].[sum:State annual wind net generation (MWh):qk]' type='color' w='16000' x='84000' y='10625' />
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='33'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.054qz8d0dejun017crn5g0wcm39k].[avg:State total nonrenewables generation percent (resource mix):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.054qz8d0dejun017crn5g0wcm39k].[avg:State total nonrenewables generation percent (resource mix):qk]</field>
+            <field>[federated.054qz8d0dejun017crn5g0wcm39k].[none:State abbreviation:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.054qz8d0dejun017crn5g0wcm39k].[sum:State annual wind net generation (MWh):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.054qz8d0dejun017crn5g0wcm39k].[none:State abbreviation:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2' />
+      </viewpoints>
+      <active id='1' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      blgCCRbO/wdICzG1+cMn0gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      fyFeGwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
