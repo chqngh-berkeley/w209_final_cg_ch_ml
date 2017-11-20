@@ -11,132 +11,132 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='eGRID2014_Data_v2' name='excel-direct.0dh87er1t6f99l1036qrt1cky0sy'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Gutwein/Google Drive/MIDS/W209 Data Visualization/assignments/final_project/w209_final_cg_ch_ml/data/eGRID2014_Data_v2.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Gutwein/Google Drive/MIDS/W209 Data Visualization/assignments/final_project/w209_final_cg_ch_ml/data/eGRID2014_Data_v2.xlsx' interpretationMode='1' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <relation connection='excel-direct.0dh87er1t6f99l1036qrt1cky0sy' name='ST14' table='[ST14$]' type='table'>
-          <columns gridOrigin='A1:DH53:no:A1:DH53:0' header='yes' outcome='2'>
-            <column datatype='string' name='State abbreviation' ordinal='0' />
-            <column datatype='string' name='FIPS State code' ordinal='1' />
-            <column datatype='real' name='State nameplate capacity (MW)' ordinal='2' />
-            <column datatype='real' name='State annual heat input from combustion (MMBtu)' ordinal='3' />
-            <column datatype='real' name='State ozone season heat input from combustion (MMBtu)' ordinal='4' />
-            <column datatype='real' name='State total annual heat input (MMBtu)' ordinal='5' />
-            <column datatype='real' name='State total ozone season heat input (MMBtu)' ordinal='6' />
-            <column datatype='real' name='State annual net generation (MWh)' ordinal='7' />
-            <column datatype='real' name='State ozone season net generation (MWh)' ordinal='8' />
-            <column datatype='real' name='State annual NOx emissions (tons)' ordinal='9' />
-            <column datatype='real' name='State ozone season NOx emissions (tons)' ordinal='10' />
-            <column datatype='real' name='State annual SO2 emissions (tons)' ordinal='11' />
-            <column datatype='real' name='State annual CO2 emissions (tons)' ordinal='12' />
-            <column datatype='real' name='State annual CH4 emissions (lbs)' ordinal='13' />
-            <column datatype='real' name='State annual N2O emissions (lbs)' ordinal='14' />
-            <column datatype='real' name='State annual CO2 equivalent emissions (tons)' ordinal='15' />
-            <column datatype='string' name='State annual Hg emissions (lbs)' ordinal='16' />
-            <column datatype='real' name='State annual NOx total output emission rate (lb/MWh)' ordinal='17' />
-            <column datatype='real' name='State ozone season NOx total output emission rate (lb/MWh)' ordinal='18' />
-            <column datatype='real' name='State annual SO2 total output emission rate (lb/MWh)' ordinal='19' />
-            <column datatype='real' name='State annual CO2 total output emission rate (lb/MWh)' ordinal='20' />
-            <column datatype='real' name='State annual CH4 total output emission rate (lb/GWh)' ordinal='21' />
-            <column datatype='real' name='State annual N2O total output emission rate (lb/GWh)' ordinal='22' />
-            <column datatype='real' name='State annual CO2 equivalent total output emission rate (lb/MWh)' ordinal='23' />
-            <column datatype='string' name='State annual Hg total output emission rate (lb/GWh)' ordinal='24' />
-            <column datatype='real' name='State annual NOx input emission rate (lb/MMBtu)' ordinal='25' />
-            <column datatype='real' name='State ozone season NOx input emission rate (lb/MMBtu)' ordinal='26' />
-            <column datatype='real' name='State annual SO2 input emission rate (lb/MMBtu)' ordinal='27' />
-            <column datatype='real' name='State annual CO2 input emission rate (lb/MMBtu)' ordinal='28' />
-            <column datatype='string' name='State annual Hg input emission rate (lb/BBtu)' ordinal='29' />
-            <column datatype='real' name='State annual NOx combustion output emission rate (lb/MWh)' ordinal='30' />
-            <column datatype='real' name='State ozone season NOx combustion output emission rate (lb/MWh)' ordinal='31' />
-            <column datatype='real' name='State annual SO2 combustion output emission rate (lb/MWh)' ordinal='32' />
-            <column datatype='real' name='State annual CO2 combustion output emission rate (lb/MWh)' ordinal='33' />
-            <column datatype='real' name='State annual CH4 combustion output emission rate (lb/GWh)' ordinal='34' />
-            <column datatype='real' name='State annual N2O combustion output emission rate (lb/GWh)' ordinal='35' />
-            <column datatype='string' name='State annual Hg combustion output emission rate (lb/GWh)' ordinal='36' />
-            <column datatype='real' name='State annual NOx coal output emission rate (lb/MWh)' ordinal='37' />
-            <column datatype='real' name='State annual NOx oil output emission rate (lb/MWh)' ordinal='38' />
-            <column datatype='real' name='State annual NOx gas output emission rate (lb/MWh)' ordinal='39' />
-            <column datatype='real' name='State annual NOx fossil fuel output emission rate (lb/MWh)' ordinal='40' />
-            <column datatype='real' name='State ozone season NOx coal output emission rate (lb/MWh)' ordinal='41' />
-            <column datatype='string' name='State ozone season NOx oil output emission rate (lb/MWh)' ordinal='42' />
-            <column datatype='real' name='State ozone season NOx gas output emission rate (lb/MWh)' ordinal='43' />
-            <column datatype='real' name='State ozone season Nox fossil fuel output emission rate (lb/MWh)' ordinal='44' />
-            <column datatype='real' name='State annual SO2 coal output emission rate (lb/MWh)' ordinal='45' />
-            <column datatype='real' name='State annual SO2 oil output emission rate (lb/MWh)' ordinal='46' />
-            <column datatype='real' name='State annual SO2 gas output emission rate (lb/MWh)' ordinal='47' />
-            <column datatype='real' name='State annual SO2 fossil fuel output emission rate (lb/MWh)' ordinal='48' />
-            <column datatype='real' name='State annual CO2 coal output emission rate (lb/MWh)' ordinal='49' />
-            <column datatype='real' name='State annual CO2 oil output emission rate (lb/MWh)' ordinal='50' />
-            <column datatype='real' name='State annual CO2 gas output emission rate (lb/MWh)' ordinal='51' />
-            <column datatype='real' name='State annual CO2 fossil fuel output emission rate (lb/MWh)' ordinal='52' />
-            <column datatype='string' name='State annual Hg coal output emission rate (lb/GWh)' ordinal='53' />
-            <column datatype='string' name='State annual Hg fossil fuel output emission rate (lb/GWh)' ordinal='54' />
-            <column datatype='real' name='State annual NOx coal input emission rate (lb/MMBtu)' ordinal='55' />
-            <column datatype='real' name='State annual NOx oil input emission rate (lb/MMBtu)' ordinal='56' />
-            <column datatype='real' name='State annual NOx gas input emission rate (lb/MMBtu)' ordinal='57' />
-            <column datatype='real' name='State annual NOx fossil fuel input emission rate (lb/MMBtu)' ordinal='58' />
-            <column datatype='real' name='State ozone season NOx coal input emission rate (lb/MMBtu)' ordinal='59' />
-            <column datatype='real' name='State ozone season NOx oil input emission rate (lb/MMBtu)' ordinal='60' />
-            <column datatype='real' name='State ozone season NOx gas input emission rate (lb/MMBtu)' ordinal='61' />
-            <column datatype='real' name='State ozone season NOx fossil fuel input emission rate (lb/MMBtu)' ordinal='62' />
-            <column datatype='real' name='State annual SO2 coal input emission rate (lb/MMBtu)' ordinal='63' />
-            <column datatype='real' name='State annual SO2 oil input emission rate (lb/MMBtu)' ordinal='64' />
-            <column datatype='real' name='State annual SO2 gas input emission rate (lb/MMBtu)' ordinal='65' />
-            <column datatype='real' name='State annual SO2 fossil fuel input emission rate (lb/MMBtu)' ordinal='66' />
-            <column datatype='real' name='State annual CO2 coal input emission rate (lb/MMBtu)' ordinal='67' />
-            <column datatype='real' name='State annual CO2 oil input emission rate (lb/MMBtu)' ordinal='68' />
-            <column datatype='real' name='State annual CO2 gas input emission rate (lb/MMBtu)' ordinal='69' />
-            <column datatype='real' name='State annual CO2 fossil fuel input emission rate (lb/MMBtu)' ordinal='70' />
-            <column datatype='string' name='State annual Hg coal input emission rate (lb/BBtu)' ordinal='71' />
-            <column datatype='string' name='State annual Hg fossil fuel input emission rate (lb/BBtu)' ordinal='72' />
-            <column datatype='real' name='State annual NOx non-baseload output emission rate (lb/MWh)' ordinal='73' />
-            <column datatype='real' name='State ozone season NOx non-baseload output emission rate (lb/MWh)' ordinal='74' />
-            <column datatype='real' name='State annual SO2 non-baseload output emission rate (lb/MWh)' ordinal='75' />
-            <column datatype='real' name='State annual CO2 non-baseload  output emission rate (lb/MWh)' ordinal='76' />
-            <column datatype='real' name='State annual CH4 non-baseload output emission rate (lb/GWh)' ordinal='77' />
-            <column datatype='real' name='State annual N2O non-baseload output emission rate (lb/GWh)' ordinal='78' />
-            <column datatype='string' name='State annual Hg non-baseload  output emission rate (lb/GWh)' ordinal='79' />
-            <column datatype='real' name='State annual coal net generation (MWh)' ordinal='80' />
-            <column datatype='real' name='State annual oil net generation (MWh)' ordinal='81' />
-            <column datatype='real' name='State annual gas net generation (MWh)' ordinal='82' />
-            <column datatype='integer' name='State annual nuclear net generation (MWh)' ordinal='83' />
-            <column datatype='real' name='State annual hydro net generation (MWh)' ordinal='84' />
-            <column datatype='real' name='State annual biomass net generation (MWh)' ordinal='85' />
-            <column datatype='real' name='State annual wind net generation (MWh)' ordinal='86' />
-            <column datatype='real' name='State annual solar net generation (MWh)' ordinal='87' />
-            <column datatype='integer' name='State annual geothermal net generation (MWh)' ordinal='88' />
-            <column datatype='real' name='State annual other fossil net generation (MWh)' ordinal='89' />
-            <column datatype='real' name='State annual other unknown/ purchased fuel net generation (MWh)' ordinal='90' />
-            <column datatype='real' name='State annual total nonrenewables net generation (MWh)' ordinal='91' />
-            <column datatype='real' name='State annual total renewables net generation (MWh)' ordinal='92' />
-            <column datatype='real' name='State annual total nonhydro renewables net generation (MWh)' ordinal='93' />
-            <column datatype='real' name='State annual total combustion net generation (MWh)' ordinal='94' />
-            <column datatype='real' name='State annual total noncombustion net generation (MWh)' ordinal='95' />
-            <column datatype='real' name='State coal generation percent (resource mix)' ordinal='96' />
-            <column datatype='real' name='State oil generation percent (resource mix)' ordinal='97' />
-            <column datatype='real' name='State gas generation percent (resource mix)' ordinal='98' />
-            <column datatype='real' name='State nuclear generation percent (resource mix)' ordinal='99' />
-            <column datatype='real' name='State hydro generation percent (resource mix)' ordinal='100' />
-            <column datatype='real' name='State biomass generation percent (resource mix)' ordinal='101' />
-            <column datatype='real' name='State wind generation percent (resource mix)' ordinal='102' />
-            <column datatype='real' name='State solar generation percent (resource mix)' ordinal='103' />
-            <column datatype='real' name='State geothermal generation percent (resource mix)' ordinal='104' />
-            <column datatype='real' name='State other fossil  generation percent (resource mix)' ordinal='105' />
-            <column datatype='real' name='State other unknown/ purchased fuel generation percent (resource mix)' ordinal='106' />
-            <column datatype='real' name='State total nonrenewables generation percent (resource mix)' ordinal='107' />
-            <column datatype='real' name='State total renewables generation percent (resource mix)' ordinal='108' />
-            <column datatype='real' name='State total nonhydro renewables generation percent (resource mix)' ordinal='109' />
-            <column datatype='real' name='State total combustion generation percent (resource mix)' ordinal='110' />
-            <column datatype='real' name='State total noncombustion generation percent (resource mix)' ordinal='111' />
+          <columns gridOrigin='A1:DH53:no:A1:DH53:1' header='yes' lost='0' outcome='1' processed='5193'>
+            <column datatype='string' name='PSTATABB' ordinal='0' />
+            <column datatype='integer' name='FIPSST' ordinal='1' />
+            <column datatype='real' name='NAMEPCAP' ordinal='2' />
+            <column datatype='real' name='STHTIAN' ordinal='3' />
+            <column datatype='real' name='STHTIOZ' ordinal='4' />
+            <column datatype='real' name='STHTIANT' ordinal='5' />
+            <column datatype='real' name='STHTIOZT' ordinal='6' />
+            <column datatype='real' name='STNGENAN' ordinal='7' />
+            <column datatype='real' name='STNGENOZ' ordinal='8' />
+            <column datatype='real' name='STNOXAN' ordinal='9' />
+            <column datatype='real' name='STNOXOZ' ordinal='10' />
+            <column datatype='real' name='STSO2AN' ordinal='11' />
+            <column datatype='real' name='STCO2AN' ordinal='12' />
+            <column datatype='real' name='STCH4AN' ordinal='13' />
+            <column datatype='real' name='STN2OAN' ordinal='14' />
+            <column datatype='real' name='STCO2EQA' ordinal='15' />
+            <column datatype='real' name='STHGAN' ordinal='16' />
+            <column datatype='real' name='STNOXRTA' ordinal='17' />
+            <column datatype='real' name='STNOXRTO' ordinal='18' />
+            <column datatype='real' name='STSO2RTA' ordinal='19' />
+            <column datatype='real' name='STCO2RTA' ordinal='20' />
+            <column datatype='real' name='STCH4RTA' ordinal='21' />
+            <column datatype='real' name='STN2ORTA' ordinal='22' />
+            <column datatype='real' name='STC2ERTA' ordinal='23' />
+            <column datatype='real' name='STHGRTA' ordinal='24' />
+            <column datatype='real' name='STNOXRA' ordinal='25' />
+            <column datatype='real' name='STNOXRO' ordinal='26' />
+            <column datatype='real' name='STSO2RA' ordinal='27' />
+            <column datatype='real' name='STCO2RA' ordinal='28' />
+            <column datatype='real' name='STHGRA' ordinal='29' />
+            <column datatype='real' name='STNOXCRT' ordinal='30' />
+            <column datatype='real' name='STNOXCRO' ordinal='31' />
+            <column datatype='real' name='STSO2CRT' ordinal='32' />
+            <column datatype='real' name='STCO2CRT' ordinal='33' />
+            <column datatype='real' name='STCH4CRT' ordinal='34' />
+            <column datatype='real' name='STN2OCRT' ordinal='35' />
+            <column datatype='real' name='STHGCRT' ordinal='36' />
+            <column datatype='real' name='STCNOXRT' ordinal='37' />
+            <column datatype='real' name='STONOXRT' ordinal='38' />
+            <column datatype='real' name='STGNOXRT' ordinal='39' />
+            <column datatype='real' name='STFSNXRT' ordinal='40' />
+            <column datatype='real' name='STCNXORT' ordinal='41' />
+            <column datatype='real' name='STONXORT' ordinal='42' />
+            <column datatype='real' name='STGNXORT' ordinal='43' />
+            <column datatype='real' name='STFSNORT' ordinal='44' />
+            <column datatype='real' name='STCSO2RT' ordinal='45' />
+            <column datatype='real' name='STOSO2RT' ordinal='46' />
+            <column datatype='real' name='STGSO2RT' ordinal='47' />
+            <column datatype='real' name='STFSS2RT' ordinal='48' />
+            <column datatype='real' name='STCCO2RT' ordinal='49' />
+            <column datatype='real' name='STOCO2RT' ordinal='50' />
+            <column datatype='real' name='STGCO2RT' ordinal='51' />
+            <column datatype='real' name='STFSC2RT' ordinal='52' />
+            <column datatype='real' name='STCHGRT' ordinal='53' />
+            <column datatype='real' name='STFSHGRT' ordinal='54' />
+            <column datatype='real' name='STCNOXR' ordinal='55' />
+            <column datatype='real' name='STONOXR' ordinal='56' />
+            <column datatype='real' name='STGNOXR' ordinal='57' />
+            <column datatype='real' name='STFSNXR' ordinal='58' />
+            <column datatype='real' name='STCNXOR' ordinal='59' />
+            <column datatype='real' name='STONXOR' ordinal='60' />
+            <column datatype='real' name='STGNXOR' ordinal='61' />
+            <column datatype='real' name='STFSNOR' ordinal='62' />
+            <column datatype='real' name='STCSO2R' ordinal='63' />
+            <column datatype='real' name='STOSO2R' ordinal='64' />
+            <column datatype='real' name='STGSO2R' ordinal='65' />
+            <column datatype='real' name='STFSS2R' ordinal='66' />
+            <column datatype='real' name='STCCO2R' ordinal='67' />
+            <column datatype='real' name='STOCO2R' ordinal='68' />
+            <column datatype='real' name='STGCO2R' ordinal='69' />
+            <column datatype='real' name='STFSC2R' ordinal='70' />
+            <column datatype='real' name='STCHGR' ordinal='71' />
+            <column datatype='real' name='STFSHGR' ordinal='72' />
+            <column datatype='real' name='STNBNOX' ordinal='73' />
+            <column datatype='real' name='STNBNXO' ordinal='74' />
+            <column datatype='real' name='STNBSO2' ordinal='75' />
+            <column datatype='real' name='STNBCO2' ordinal='76' />
+            <column datatype='real' name='STNBCH4' ordinal='77' />
+            <column datatype='real' name='STNBN2O' ordinal='78' />
+            <column datatype='real' name='STNBHG' ordinal='79' />
+            <column datatype='real' name='STGENACL' ordinal='80' />
+            <column datatype='real' name='STGENAOL' ordinal='81' />
+            <column datatype='real' name='STGENAGS' ordinal='82' />
+            <column datatype='integer' name='STGENANC' ordinal='83' />
+            <column datatype='real' name='STGENAHY' ordinal='84' />
+            <column datatype='real' name='STGENABM' ordinal='85' />
+            <column datatype='real' name='STGENAWI' ordinal='86' />
+            <column datatype='real' name='STGENASO' ordinal='87' />
+            <column datatype='integer' name='STGENAGT' ordinal='88' />
+            <column datatype='real' name='STGENAOF' ordinal='89' />
+            <column datatype='real' name='STGENAOP' ordinal='90' />
+            <column datatype='real' name='STGENATN' ordinal='91' />
+            <column datatype='real' name='STGENATR' ordinal='92' />
+            <column datatype='real' name='STGENATH' ordinal='93' />
+            <column datatype='real' name='STGENACY' ordinal='94' />
+            <column datatype='real' name='STGENACN' ordinal='95' />
+            <column datatype='real' name='STCLPR' ordinal='96' />
+            <column datatype='real' name='STOLPR' ordinal='97' />
+            <column datatype='real' name='STGSPR' ordinal='98' />
+            <column datatype='real' name='STNCPR' ordinal='99' />
+            <column datatype='real' name='STHYPR' ordinal='100' />
+            <column datatype='real' name='STBMPR' ordinal='101' />
+            <column datatype='real' name='STWIPR' ordinal='102' />
+            <column datatype='real' name='STSOPR' ordinal='103' />
+            <column datatype='real' name='STGTPR' ordinal='104' />
+            <column datatype='real' name='STOFPR' ordinal='105' />
+            <column datatype='real' name='STOPPR' ordinal='106' />
+            <column datatype='real' name='STTNPR' ordinal='107' />
+            <column datatype='real' name='STTRPR' ordinal='108' />
+            <column datatype='real' name='STTHPR' ordinal='109' />
+            <column datatype='real' name='STCYPR' ordinal='110' />
+            <column datatype='real' name='STCNPR' ordinal='111' />
           </columns>
         </relation>
         <metadata-records>
           <metadata-record class='column'>
-            <remote-name>State abbreviation</remote-name>
+            <remote-name>PSTATABB</remote-name>
             <remote-type>130</remote-type>
-            <local-name>[State abbreviation]</local-name>
+            <local-name>[PSTATABB]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State abbreviation</remote-alias>
+            <remote-alias>PSTATABB</remote-alias>
             <ordinal>0</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -147,26 +147,25 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>FIPS State code</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[FIPS State code]</local-name>
+            <remote-name>FIPSST</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FIPSST]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>FIPS State code</remote-alias>
+            <remote-alias>FIPSST</remote-alias>
             <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State nameplate capacity (MW)</remote-name>
+            <remote-name>NAMEPCAP</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State nameplate capacity (MW)]</local-name>
+            <local-name>[NAMEPCAP]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State nameplate capacity (MW)</remote-alias>
+            <remote-alias>NAMEPCAP</remote-alias>
             <ordinal>2</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -177,11 +176,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual heat input from combustion (MMBtu)</remote-name>
+            <remote-name>STHTIAN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual heat input from combustion (MMBtu)]</local-name>
+            <local-name>[STHTIAN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual heat input from combustion (MMBtu)</remote-alias>
+            <remote-alias>STHTIAN</remote-alias>
             <ordinal>3</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -192,11 +191,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season heat input from combustion (MMBtu)</remote-name>
+            <remote-name>STHTIOZ</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season heat input from combustion (MMBtu)]</local-name>
+            <local-name>[STHTIOZ]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season heat input from combustion (MMBtu)</remote-alias>
+            <remote-alias>STHTIOZ</remote-alias>
             <ordinal>4</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -207,11 +206,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State total annual heat input (MMBtu)</remote-name>
+            <remote-name>STHTIANT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State total annual heat input (MMBtu)]</local-name>
+            <local-name>[STHTIANT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State total annual heat input (MMBtu)</remote-alias>
+            <remote-alias>STHTIANT</remote-alias>
             <ordinal>5</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -222,11 +221,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State total ozone season heat input (MMBtu)</remote-name>
+            <remote-name>STHTIOZT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State total ozone season heat input (MMBtu)]</local-name>
+            <local-name>[STHTIOZT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State total ozone season heat input (MMBtu)</remote-alias>
+            <remote-alias>STHTIOZT</remote-alias>
             <ordinal>6</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -237,11 +236,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual net generation (MWh)</remote-name>
+            <remote-name>STNGENAN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual net generation (MWh)]</local-name>
+            <local-name>[STNGENAN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual net generation (MWh)</remote-alias>
+            <remote-alias>STNGENAN</remote-alias>
             <ordinal>7</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -252,11 +251,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season net generation (MWh)</remote-name>
+            <remote-name>STNGENOZ</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season net generation (MWh)]</local-name>
+            <local-name>[STNGENOZ]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season net generation (MWh)</remote-alias>
+            <remote-alias>STNGENOZ</remote-alias>
             <ordinal>8</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -267,11 +266,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx emissions (tons)</remote-name>
+            <remote-name>STNOXAN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx emissions (tons)]</local-name>
+            <local-name>[STNOXAN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx emissions (tons)</remote-alias>
+            <remote-alias>STNOXAN</remote-alias>
             <ordinal>9</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -282,11 +281,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx emissions (tons)</remote-name>
+            <remote-name>STNOXOZ</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx emissions (tons)]</local-name>
+            <local-name>[STNOXOZ]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx emissions (tons)</remote-alias>
+            <remote-alias>STNOXOZ</remote-alias>
             <ordinal>10</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -297,11 +296,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 emissions (tons)</remote-name>
+            <remote-name>STSO2AN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 emissions (tons)]</local-name>
+            <local-name>[STSO2AN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 emissions (tons)</remote-alias>
+            <remote-alias>STSO2AN</remote-alias>
             <ordinal>11</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -312,11 +311,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 emissions (tons)</remote-name>
+            <remote-name>STCO2AN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 emissions (tons)]</local-name>
+            <local-name>[STCO2AN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 emissions (tons)</remote-alias>
+            <remote-alias>STCO2AN</remote-alias>
             <ordinal>12</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -327,11 +326,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CH4 emissions (lbs)</remote-name>
+            <remote-name>STCH4AN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CH4 emissions (lbs)]</local-name>
+            <local-name>[STCH4AN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CH4 emissions (lbs)</remote-alias>
+            <remote-alias>STCH4AN</remote-alias>
             <ordinal>13</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -342,11 +341,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual N2O emissions (lbs)</remote-name>
+            <remote-name>STN2OAN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual N2O emissions (lbs)]</local-name>
+            <local-name>[STN2OAN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual N2O emissions (lbs)</remote-alias>
+            <remote-alias>STN2OAN</remote-alias>
             <ordinal>14</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -357,11 +356,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 equivalent emissions (tons)</remote-name>
+            <remote-name>STCO2EQA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 equivalent emissions (tons)]</local-name>
+            <local-name>[STCO2EQA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 equivalent emissions (tons)</remote-alias>
+            <remote-alias>STCO2EQA</remote-alias>
             <ordinal>15</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -372,26 +371,26 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual Hg emissions (lbs)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg emissions (lbs)]</local-name>
+            <remote-name>STHGAN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STHGAN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg emissions (lbs)</remote-alias>
+            <remote-alias>STHGAN</remote-alias>
             <ordinal>16</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx total output emission rate (lb/MWh)</remote-name>
+            <remote-name>STNOXRTA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx total output emission rate (lb/MWh)]</local-name>
+            <local-name>[STNOXRTA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx total output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STNOXRTA</remote-alias>
             <ordinal>17</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -402,11 +401,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx total output emission rate (lb/MWh)</remote-name>
+            <remote-name>STNOXRTO</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx total output emission rate (lb/MWh)]</local-name>
+            <local-name>[STNOXRTO]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx total output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STNOXRTO</remote-alias>
             <ordinal>18</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -417,11 +416,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 total output emission rate (lb/MWh)</remote-name>
+            <remote-name>STSO2RTA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 total output emission rate (lb/MWh)]</local-name>
+            <local-name>[STSO2RTA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 total output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STSO2RTA</remote-alias>
             <ordinal>19</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -432,11 +431,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 total output emission rate (lb/MWh)</remote-name>
+            <remote-name>STCO2RTA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 total output emission rate (lb/MWh)]</local-name>
+            <local-name>[STCO2RTA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 total output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STCO2RTA</remote-alias>
             <ordinal>20</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -447,11 +446,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CH4 total output emission rate (lb/GWh)</remote-name>
+            <remote-name>STCH4RTA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CH4 total output emission rate (lb/GWh)]</local-name>
+            <local-name>[STCH4RTA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CH4 total output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STCH4RTA</remote-alias>
             <ordinal>21</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -462,11 +461,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual N2O total output emission rate (lb/GWh)</remote-name>
+            <remote-name>STN2ORTA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual N2O total output emission rate (lb/GWh)]</local-name>
+            <local-name>[STN2ORTA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual N2O total output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STN2ORTA</remote-alias>
             <ordinal>22</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -477,11 +476,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 equivalent total output emission rate (lb/MWh)</remote-name>
+            <remote-name>STC2ERTA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 equivalent total output emission rate (lb/MWh)]</local-name>
+            <local-name>[STC2ERTA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 equivalent total output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STC2ERTA</remote-alias>
             <ordinal>23</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -492,26 +491,26 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual Hg total output emission rate (lb/GWh)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg total output emission rate (lb/GWh)]</local-name>
+            <remote-name>STHGRTA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STHGRTA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg total output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STHGRTA</remote-alias>
             <ordinal>24</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STNOXRA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STNOXRA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STNOXRA</remote-alias>
             <ordinal>25</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -522,11 +521,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STNOXRO</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STNOXRO]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STNOXRO</remote-alias>
             <ordinal>26</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -537,11 +536,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STSO2RA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STSO2RA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STSO2RA</remote-alias>
             <ordinal>27</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -552,11 +551,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STCO2RA</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STCO2RA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STCO2RA</remote-alias>
             <ordinal>28</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -567,26 +566,26 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual Hg input emission rate (lb/BBtu)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg input emission rate (lb/BBtu)]</local-name>
+            <remote-name>STHGRA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STHGRA]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg input emission rate (lb/BBtu)</remote-alias>
+            <remote-alias>STHGRA</remote-alias>
             <ordinal>29</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx combustion output emission rate (lb/MWh)</remote-name>
+            <remote-name>STNOXCRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx combustion output emission rate (lb/MWh)]</local-name>
+            <local-name>[STNOXCRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx combustion output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STNOXCRT</remote-alias>
             <ordinal>30</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -597,11 +596,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx combustion output emission rate (lb/MWh)</remote-name>
+            <remote-name>STNOXCRO</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx combustion output emission rate (lb/MWh)]</local-name>
+            <local-name>[STNOXCRO]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx combustion output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STNOXCRO</remote-alias>
             <ordinal>31</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -612,11 +611,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 combustion output emission rate (lb/MWh)</remote-name>
+            <remote-name>STSO2CRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 combustion output emission rate (lb/MWh)]</local-name>
+            <local-name>[STSO2CRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 combustion output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STSO2CRT</remote-alias>
             <ordinal>32</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -627,11 +626,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 combustion output emission rate (lb/MWh)</remote-name>
+            <remote-name>STCO2CRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 combustion output emission rate (lb/MWh)]</local-name>
+            <local-name>[STCO2CRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 combustion output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STCO2CRT</remote-alias>
             <ordinal>33</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -642,11 +641,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CH4 combustion output emission rate (lb/GWh)</remote-name>
+            <remote-name>STCH4CRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CH4 combustion output emission rate (lb/GWh)]</local-name>
+            <local-name>[STCH4CRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CH4 combustion output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STCH4CRT</remote-alias>
             <ordinal>34</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -657,11 +656,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual N2O combustion output emission rate (lb/GWh)</remote-name>
+            <remote-name>STN2OCRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual N2O combustion output emission rate (lb/GWh)]</local-name>
+            <local-name>[STN2OCRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual N2O combustion output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STN2OCRT</remote-alias>
             <ordinal>35</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -672,26 +671,26 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual Hg combustion output emission rate (lb/GWh)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg combustion output emission rate (lb/GWh)]</local-name>
+            <remote-name>STHGCRT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STHGCRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg combustion output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STHGCRT</remote-alias>
             <ordinal>36</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx coal output emission rate (lb/MWh)</remote-name>
+            <remote-name>STCNOXRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx coal output emission rate (lb/MWh)]</local-name>
+            <local-name>[STCNOXRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx coal output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STCNOXRT</remote-alias>
             <ordinal>37</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -702,11 +701,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx oil output emission rate (lb/MWh)</remote-name>
+            <remote-name>STONOXRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx oil output emission rate (lb/MWh)]</local-name>
+            <local-name>[STONOXRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx oil output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STONOXRT</remote-alias>
             <ordinal>38</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -717,11 +716,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx gas output emission rate (lb/MWh)</remote-name>
+            <remote-name>STGNOXRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx gas output emission rate (lb/MWh)]</local-name>
+            <local-name>[STGNOXRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx gas output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STGNOXRT</remote-alias>
             <ordinal>39</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -732,11 +731,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx fossil fuel output emission rate (lb/MWh)</remote-name>
+            <remote-name>STFSNXRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx fossil fuel output emission rate (lb/MWh)]</local-name>
+            <local-name>[STFSNXRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx fossil fuel output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STFSNXRT</remote-alias>
             <ordinal>40</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -747,11 +746,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx coal output emission rate (lb/MWh)</remote-name>
+            <remote-name>STCNXORT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx coal output emission rate (lb/MWh)]</local-name>
+            <local-name>[STCNXORT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx coal output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STCNXORT</remote-alias>
             <ordinal>41</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -762,26 +761,26 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx oil output emission rate (lb/MWh)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State ozone season NOx oil output emission rate (lb/MWh)]</local-name>
+            <remote-name>STONXORT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STONXORT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx oil output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STONXORT</remote-alias>
             <ordinal>42</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
             <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx gas output emission rate (lb/MWh)</remote-name>
+            <remote-name>STGNXORT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx gas output emission rate (lb/MWh)]</local-name>
+            <local-name>[STGNXORT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx gas output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STGNXORT</remote-alias>
             <ordinal>43</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -792,11 +791,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season Nox fossil fuel output emission rate (lb/MWh)</remote-name>
+            <remote-name>STFSNORT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season Nox fossil fuel output emission rate (lb/MWh)]</local-name>
+            <local-name>[STFSNORT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season Nox fossil fuel output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STFSNORT</remote-alias>
             <ordinal>44</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -807,11 +806,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 coal output emission rate (lb/MWh)</remote-name>
+            <remote-name>STCSO2RT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 coal output emission rate (lb/MWh)]</local-name>
+            <local-name>[STCSO2RT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 coal output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STCSO2RT</remote-alias>
             <ordinal>45</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -822,11 +821,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 oil output emission rate (lb/MWh)</remote-name>
+            <remote-name>STOSO2RT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 oil output emission rate (lb/MWh)]</local-name>
+            <local-name>[STOSO2RT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 oil output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STOSO2RT</remote-alias>
             <ordinal>46</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -837,11 +836,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 gas output emission rate (lb/MWh)</remote-name>
+            <remote-name>STGSO2RT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 gas output emission rate (lb/MWh)]</local-name>
+            <local-name>[STGSO2RT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 gas output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STGSO2RT</remote-alias>
             <ordinal>47</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -852,11 +851,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 fossil fuel output emission rate (lb/MWh)</remote-name>
+            <remote-name>STFSS2RT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 fossil fuel output emission rate (lb/MWh)]</local-name>
+            <local-name>[STFSS2RT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 fossil fuel output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STFSS2RT</remote-alias>
             <ordinal>48</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -867,11 +866,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 coal output emission rate (lb/MWh)</remote-name>
+            <remote-name>STCCO2RT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 coal output emission rate (lb/MWh)]</local-name>
+            <local-name>[STCCO2RT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 coal output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STCCO2RT</remote-alias>
             <ordinal>49</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -882,11 +881,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 oil output emission rate (lb/MWh)</remote-name>
+            <remote-name>STOCO2RT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 oil output emission rate (lb/MWh)]</local-name>
+            <local-name>[STOCO2RT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 oil output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STOCO2RT</remote-alias>
             <ordinal>50</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -897,11 +896,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 gas output emission rate (lb/MWh)</remote-name>
+            <remote-name>STGCO2RT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 gas output emission rate (lb/MWh)]</local-name>
+            <local-name>[STGCO2RT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 gas output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STGCO2RT</remote-alias>
             <ordinal>51</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -912,11 +911,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 fossil fuel output emission rate (lb/MWh)</remote-name>
+            <remote-name>STFSC2RT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 fossil fuel output emission rate (lb/MWh)]</local-name>
+            <local-name>[STFSC2RT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 fossil fuel output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STFSC2RT</remote-alias>
             <ordinal>52</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -927,41 +926,41 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual Hg coal output emission rate (lb/GWh)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg coal output emission rate (lb/GWh)]</local-name>
-            <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg coal output emission rate (lb/GWh)</remote-alias>
-            <ordinal>53</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>State annual Hg fossil fuel output emission rate (lb/GWh)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg fossil fuel output emission rate (lb/GWh)]</local-name>
-            <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg fossil fuel output emission rate (lb/GWh)</remote-alias>
-            <ordinal>54</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>State annual NOx coal input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STCHGRT</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx coal input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STCHGRT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx coal input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STCHGRT</remote-alias>
+            <ordinal>53</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STFSHGRT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STFSHGRT]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>STFSHGRT</remote-alias>
+            <ordinal>54</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STCNOXR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STCNOXR]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>STCNOXR</remote-alias>
             <ordinal>55</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -972,11 +971,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx oil input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STONOXR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx oil input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STONOXR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx oil input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STONOXR</remote-alias>
             <ordinal>56</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -987,11 +986,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx gas input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STGNOXR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx gas input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STGNOXR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx gas input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STGNOXR</remote-alias>
             <ordinal>57</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1002,11 +1001,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual NOx fossil fuel input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STFSNXR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx fossil fuel input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STFSNXR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx fossil fuel input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STFSNXR</remote-alias>
             <ordinal>58</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1017,11 +1016,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx coal input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STCNXOR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx coal input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STCNXOR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx coal input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STCNXOR</remote-alias>
             <ordinal>59</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1032,11 +1031,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx oil input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STONXOR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx oil input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STONXOR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx oil input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STONXOR</remote-alias>
             <ordinal>60</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1047,11 +1046,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx gas input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STGNXOR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx gas input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STGNXOR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx gas input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STGNXOR</remote-alias>
             <ordinal>61</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1062,11 +1061,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx fossil fuel input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STFSNOR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx fossil fuel input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STFSNOR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx fossil fuel input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STFSNOR</remote-alias>
             <ordinal>62</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1077,11 +1076,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 coal input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STCSO2R</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 coal input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STCSO2R]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 coal input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STCSO2R</remote-alias>
             <ordinal>63</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1092,11 +1091,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 oil input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STOSO2R</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 oil input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STOSO2R]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 oil input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STOSO2R</remote-alias>
             <ordinal>64</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1107,11 +1106,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 gas input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STGSO2R</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 gas input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STGSO2R]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 gas input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STGSO2R</remote-alias>
             <ordinal>65</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1122,11 +1121,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 fossil fuel input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STFSS2R</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 fossil fuel input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STFSS2R]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 fossil fuel input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STFSS2R</remote-alias>
             <ordinal>66</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1137,11 +1136,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 coal input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STCCO2R</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 coal input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STCCO2R]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 coal input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STCCO2R</remote-alias>
             <ordinal>67</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1152,11 +1151,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 oil input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STOCO2R</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 oil input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STOCO2R]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 oil input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STOCO2R</remote-alias>
             <ordinal>68</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1167,11 +1166,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 gas input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STGCO2R</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 gas input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STGCO2R]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 gas input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STGCO2R</remote-alias>
             <ordinal>69</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1182,11 +1181,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 fossil fuel input emission rate (lb/MMBtu)</remote-name>
+            <remote-name>STFSC2R</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 fossil fuel input emission rate (lb/MMBtu)]</local-name>
+            <local-name>[STFSC2R]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 fossil fuel input emission rate (lb/MMBtu)</remote-alias>
+            <remote-alias>STFSC2R</remote-alias>
             <ordinal>70</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1197,41 +1196,41 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual Hg coal input emission rate (lb/BBtu)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg coal input emission rate (lb/BBtu)]</local-name>
-            <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg coal input emission rate (lb/BBtu)</remote-alias>
-            <ordinal>71</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>State annual Hg fossil fuel input emission rate (lb/BBtu)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg fossil fuel input emission rate (lb/BBtu)]</local-name>
-            <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg fossil fuel input emission rate (lb/BBtu)</remote-alias>
-            <ordinal>72</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>State annual NOx non-baseload output emission rate (lb/MWh)</remote-name>
+            <remote-name>STCHGR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual NOx non-baseload output emission rate (lb/MWh)]</local-name>
+            <local-name>[STCHGR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual NOx non-baseload output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STCHGR</remote-alias>
+            <ordinal>71</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STFSHGR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STFSHGR]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>STFSHGR</remote-alias>
+            <ordinal>72</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STNBNOX</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STNBNOX]</local-name>
+            <parent-name>[ST14]</parent-name>
+            <remote-alias>STNBNOX</remote-alias>
             <ordinal>73</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1242,11 +1241,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State ozone season NOx non-baseload output emission rate (lb/MWh)</remote-name>
+            <remote-name>STNBNXO</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State ozone season NOx non-baseload output emission rate (lb/MWh)]</local-name>
+            <local-name>[STNBNXO]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State ozone season NOx non-baseload output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STNBNXO</remote-alias>
             <ordinal>74</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1257,11 +1256,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual SO2 non-baseload output emission rate (lb/MWh)</remote-name>
+            <remote-name>STNBSO2</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual SO2 non-baseload output emission rate (lb/MWh)]</local-name>
+            <local-name>[STNBSO2]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual SO2 non-baseload output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STNBSO2</remote-alias>
             <ordinal>75</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1272,11 +1271,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CO2 non-baseload  output emission rate (lb/MWh)</remote-name>
+            <remote-name>STNBCO2</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CO2 non-baseload  output emission rate (lb/MWh)]</local-name>
+            <local-name>[STNBCO2]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CO2 non-baseload  output emission rate (lb/MWh)</remote-alias>
+            <remote-alias>STNBCO2</remote-alias>
             <ordinal>76</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1287,11 +1286,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual CH4 non-baseload output emission rate (lb/GWh)</remote-name>
+            <remote-name>STNBCH4</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual CH4 non-baseload output emission rate (lb/GWh)]</local-name>
+            <local-name>[STNBCH4]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual CH4 non-baseload output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STNBCH4</remote-alias>
             <ordinal>77</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1302,11 +1301,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual N2O non-baseload output emission rate (lb/GWh)</remote-name>
+            <remote-name>STNBN2O</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual N2O non-baseload output emission rate (lb/GWh)]</local-name>
+            <local-name>[STNBN2O]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual N2O non-baseload output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STNBN2O</remote-alias>
             <ordinal>78</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1317,26 +1316,26 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual Hg non-baseload  output emission rate (lb/GWh)</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[State annual Hg non-baseload  output emission rate (lb/GWh)]</local-name>
+            <remote-name>STNBHG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STNBHG]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual Hg non-baseload  output emission rate (lb/GWh)</remote-alias>
+            <remote-alias>STNBHG</remote-alias>
             <ordinal>79</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual coal net generation (MWh)</remote-name>
+            <remote-name>STGENACL</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual coal net generation (MWh)]</local-name>
+            <local-name>[STGENACL]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual coal net generation (MWh)</remote-alias>
+            <remote-alias>STGENACL</remote-alias>
             <ordinal>80</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1347,11 +1346,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual oil net generation (MWh)</remote-name>
+            <remote-name>STGENAOL</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual oil net generation (MWh)]</local-name>
+            <local-name>[STGENAOL]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual oil net generation (MWh)</remote-alias>
+            <remote-alias>STGENAOL</remote-alias>
             <ordinal>81</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1362,11 +1361,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual gas net generation (MWh)</remote-name>
+            <remote-name>STGENAGS</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual gas net generation (MWh)]</local-name>
+            <local-name>[STGENAGS]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual gas net generation (MWh)</remote-alias>
+            <remote-alias>STGENAGS</remote-alias>
             <ordinal>82</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1377,11 +1376,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual nuclear net generation (MWh)</remote-name>
+            <remote-name>STGENANC</remote-name>
             <remote-type>20</remote-type>
-            <local-name>[State annual nuclear net generation (MWh)]</local-name>
+            <local-name>[STGENANC]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual nuclear net generation (MWh)</remote-alias>
+            <remote-alias>STGENANC</remote-alias>
             <ordinal>83</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
@@ -1391,11 +1390,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual hydro net generation (MWh)</remote-name>
+            <remote-name>STGENAHY</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual hydro net generation (MWh)]</local-name>
+            <local-name>[STGENAHY]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual hydro net generation (MWh)</remote-alias>
+            <remote-alias>STGENAHY</remote-alias>
             <ordinal>84</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1406,11 +1405,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual biomass net generation (MWh)</remote-name>
+            <remote-name>STGENABM</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual biomass net generation (MWh)]</local-name>
+            <local-name>[STGENABM]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual biomass net generation (MWh)</remote-alias>
+            <remote-alias>STGENABM</remote-alias>
             <ordinal>85</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1421,11 +1420,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual wind net generation (MWh)</remote-name>
+            <remote-name>STGENAWI</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual wind net generation (MWh)]</local-name>
+            <local-name>[STGENAWI]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual wind net generation (MWh)</remote-alias>
+            <remote-alias>STGENAWI</remote-alias>
             <ordinal>86</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1436,11 +1435,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual solar net generation (MWh)</remote-name>
+            <remote-name>STGENASO</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual solar net generation (MWh)]</local-name>
+            <local-name>[STGENASO]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual solar net generation (MWh)</remote-alias>
+            <remote-alias>STGENASO</remote-alias>
             <ordinal>87</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1451,11 +1450,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual geothermal net generation (MWh)</remote-name>
+            <remote-name>STGENAGT</remote-name>
             <remote-type>20</remote-type>
-            <local-name>[State annual geothermal net generation (MWh)]</local-name>
+            <local-name>[STGENAGT]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual geothermal net generation (MWh)</remote-alias>
+            <remote-alias>STGENAGT</remote-alias>
             <ordinal>88</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
@@ -1465,11 +1464,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual other fossil net generation (MWh)</remote-name>
+            <remote-name>STGENAOF</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual other fossil net generation (MWh)]</local-name>
+            <local-name>[STGENAOF]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual other fossil net generation (MWh)</remote-alias>
+            <remote-alias>STGENAOF</remote-alias>
             <ordinal>89</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1480,11 +1479,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual other unknown/ purchased fuel net generation (MWh)</remote-name>
+            <remote-name>STGENAOP</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual other unknown/ purchased fuel net generation (MWh)]</local-name>
+            <local-name>[STGENAOP]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual other unknown/ purchased fuel net generation (MWh)</remote-alias>
+            <remote-alias>STGENAOP</remote-alias>
             <ordinal>90</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1495,11 +1494,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual total nonrenewables net generation (MWh)</remote-name>
+            <remote-name>STGENATN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual total nonrenewables net generation (MWh)]</local-name>
+            <local-name>[STGENATN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual total nonrenewables net generation (MWh)</remote-alias>
+            <remote-alias>STGENATN</remote-alias>
             <ordinal>91</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1510,11 +1509,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual total renewables net generation (MWh)</remote-name>
+            <remote-name>STGENATR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual total renewables net generation (MWh)]</local-name>
+            <local-name>[STGENATR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual total renewables net generation (MWh)</remote-alias>
+            <remote-alias>STGENATR</remote-alias>
             <ordinal>92</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1525,11 +1524,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual total nonhydro renewables net generation (MWh)</remote-name>
+            <remote-name>STGENATH</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual total nonhydro renewables net generation (MWh)]</local-name>
+            <local-name>[STGENATH]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual total nonhydro renewables net generation (MWh)</remote-alias>
+            <remote-alias>STGENATH</remote-alias>
             <ordinal>93</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1540,11 +1539,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual total combustion net generation (MWh)</remote-name>
+            <remote-name>STGENACY</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual total combustion net generation (MWh)]</local-name>
+            <local-name>[STGENACY]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual total combustion net generation (MWh)</remote-alias>
+            <remote-alias>STGENACY</remote-alias>
             <ordinal>94</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1555,11 +1554,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State annual total noncombustion net generation (MWh)</remote-name>
+            <remote-name>STGENACN</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State annual total noncombustion net generation (MWh)]</local-name>
+            <local-name>[STGENACN]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State annual total noncombustion net generation (MWh)</remote-alias>
+            <remote-alias>STGENACN</remote-alias>
             <ordinal>95</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1570,11 +1569,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State coal generation percent (resource mix)</remote-name>
+            <remote-name>STCLPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State coal generation percent (resource mix)]</local-name>
+            <local-name>[STCLPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State coal generation percent (resource mix)</remote-alias>
+            <remote-alias>STCLPR</remote-alias>
             <ordinal>96</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1585,11 +1584,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State oil generation percent (resource mix)</remote-name>
+            <remote-name>STOLPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State oil generation percent (resource mix)]</local-name>
+            <local-name>[STOLPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State oil generation percent (resource mix)</remote-alias>
+            <remote-alias>STOLPR</remote-alias>
             <ordinal>97</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1600,11 +1599,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State gas generation percent (resource mix)</remote-name>
+            <remote-name>STGSPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State gas generation percent (resource mix)]</local-name>
+            <local-name>[STGSPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State gas generation percent (resource mix)</remote-alias>
+            <remote-alias>STGSPR</remote-alias>
             <ordinal>98</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1615,11 +1614,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State nuclear generation percent (resource mix)</remote-name>
+            <remote-name>STNCPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State nuclear generation percent (resource mix)]</local-name>
+            <local-name>[STNCPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State nuclear generation percent (resource mix)</remote-alias>
+            <remote-alias>STNCPR</remote-alias>
             <ordinal>99</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1630,11 +1629,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State hydro generation percent (resource mix)</remote-name>
+            <remote-name>STHYPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State hydro generation percent (resource mix)]</local-name>
+            <local-name>[STHYPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State hydro generation percent (resource mix)</remote-alias>
+            <remote-alias>STHYPR</remote-alias>
             <ordinal>100</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1645,11 +1644,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State biomass generation percent (resource mix)</remote-name>
+            <remote-name>STBMPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State biomass generation percent (resource mix)]</local-name>
+            <local-name>[STBMPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State biomass generation percent (resource mix)</remote-alias>
+            <remote-alias>STBMPR</remote-alias>
             <ordinal>101</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1660,11 +1659,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State wind generation percent (resource mix)</remote-name>
+            <remote-name>STWIPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State wind generation percent (resource mix)]</local-name>
+            <local-name>[STWIPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State wind generation percent (resource mix)</remote-alias>
+            <remote-alias>STWIPR</remote-alias>
             <ordinal>102</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1675,11 +1674,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State solar generation percent (resource mix)</remote-name>
+            <remote-name>STSOPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State solar generation percent (resource mix)]</local-name>
+            <local-name>[STSOPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State solar generation percent (resource mix)</remote-alias>
+            <remote-alias>STSOPR</remote-alias>
             <ordinal>103</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1690,11 +1689,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State geothermal generation percent (resource mix)</remote-name>
+            <remote-name>STGTPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State geothermal generation percent (resource mix)]</local-name>
+            <local-name>[STGTPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State geothermal generation percent (resource mix)</remote-alias>
+            <remote-alias>STGTPR</remote-alias>
             <ordinal>104</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1705,11 +1704,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State other fossil  generation percent (resource mix)</remote-name>
+            <remote-name>STOFPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State other fossil  generation percent (resource mix)]</local-name>
+            <local-name>[STOFPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State other fossil  generation percent (resource mix)</remote-alias>
+            <remote-alias>STOFPR</remote-alias>
             <ordinal>105</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1720,11 +1719,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State other unknown/ purchased fuel generation percent (resource mix)</remote-name>
+            <remote-name>STOPPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State other unknown/ purchased fuel generation percent (resource mix)]</local-name>
+            <local-name>[STOPPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State other unknown/ purchased fuel generation percent (resource mix)</remote-alias>
+            <remote-alias>STOPPR</remote-alias>
             <ordinal>106</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1735,11 +1734,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State total nonrenewables generation percent (resource mix)</remote-name>
+            <remote-name>STTNPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State total nonrenewables generation percent (resource mix)]</local-name>
+            <local-name>[STTNPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State total nonrenewables generation percent (resource mix)</remote-alias>
+            <remote-alias>STTNPR</remote-alias>
             <ordinal>107</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1750,11 +1749,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State total renewables generation percent (resource mix)</remote-name>
+            <remote-name>STTRPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State total renewables generation percent (resource mix)]</local-name>
+            <local-name>[STTRPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State total renewables generation percent (resource mix)</remote-alias>
+            <remote-alias>STTRPR</remote-alias>
             <ordinal>108</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1765,11 +1764,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State total nonhydro renewables generation percent (resource mix)</remote-name>
+            <remote-name>STTHPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State total nonhydro renewables generation percent (resource mix)]</local-name>
+            <local-name>[STTHPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State total nonhydro renewables generation percent (resource mix)</remote-alias>
+            <remote-alias>STTHPR</remote-alias>
             <ordinal>109</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1780,11 +1779,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State total combustion generation percent (resource mix)</remote-name>
+            <remote-name>STCYPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State total combustion generation percent (resource mix)]</local-name>
+            <local-name>[STCYPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State total combustion generation percent (resource mix)</remote-alias>
+            <remote-alias>STCYPR</remote-alias>
             <ordinal>110</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1795,11 +1794,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>State total noncombustion generation percent (resource mix)</remote-name>
+            <remote-name>STCNPR</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[State total noncombustion generation percent (resource mix)]</local-name>
+            <local-name>[STCNPR]</local-name>
             <parent-name>[ST14]</parent-name>
-            <remote-alias>State total noncombustion generation percent (resource mix)</remote-alias>
+            <remote-alias>STCNPR</remote-alias>
             <ordinal>111</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -1818,29 +1817,28 @@
             <contains-null>true</contains-null>
             <attributes>
               <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:DH53:no:A1:DH53:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:DH53:no:A1:DH53:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>5193</attribute>
             </attributes>
           </metadata-record>
         </metadata-records>
       </connection>
-      <column datatype='string' name='[FIPS State code]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
+      <column datatype='real' hidden='true' name='[STCHGRT]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[STCHGR]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[STFSHGRT]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[STFSHGR]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[STHGAN]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[STHGCRT]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[STHGRA]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[STHGRTA]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[STNBHG]' role='measure' type='quantitative' />
       <column datatype='string' name='[State abbreviation]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg coal input emission rate (lb/BBtu)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg coal output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg combustion output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg emissions (lbs)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg fossil fuel input emission rate (lb/BBtu)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg fossil fuel output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg input emission rate (lb/BBtu)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg non-baseload  output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State annual Hg total output emission rate (lb/GWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <column datatype='string' name='[State ozone season NOx oil output emission rate (lb/MWh)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.31145' measure-ordering='alphabetic' measure-percentage='0.68855' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.141985' measure-ordering='alphabetic' measure-percentage='0.858015' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>

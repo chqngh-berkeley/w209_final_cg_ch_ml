@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<style>
+
+.body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+</style>
+<body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script>
+//Width and height
+			var w = 900;
+			var h = 400;
+
+// Load eGRID 2014 unit level data
+			//Original data
+    d3.csv("stack_time_fuel.csv")
+      .row(function (d) {
+        return {
+        Year: +d.Year,
+        Coal: +d.Coal,
+        Nat_gas: +d.Nat_gas,
+        Petroleum: +d.Petroleum,
+        Water: +d.Water,
+        Solar: +d.Solar,
+        Wind: +d.Wind,
+        Nuclear: +d.Nuclear,
+        Other: +d.Other,
+      };})
+      .get(function(data) {
+        var dataset = data;
+        console.log(dataset);
+
+
+			//Set up stack method
+			var stack = d3.stack()
+						  .keys([ "Coal", "Nat_gas", "Petroleum", "Water", "Solar", "Wind", "Nuclear", "Other" ])
+              .order(d3.stackOrderDescending);
+
+			//Data, stacked
+			var series = stack(dataset);
+      console.log(series);
+
+			//Set up scales
+      var xScale = d3.scaleBand()
+        .domain(d3.range(dataset.length))
+				.range([0, w]);
+
+			var yScale = d3.scaleLinear()
+				.domain([0,
+					d3.max(dataset, function(d) {
+            console.log(d.Coal + d.Nat_gas + d.Petroleum + d.Water + d.Solar + d.Wind + d.Nuclear + d.Other);
+						return d.Coal + d.Nat_gas + d.Petroleum + d.Water + d.Solar + d.Wind + d.Nuclear + d.Other;
+					})
+				])
+				.range([h, 0]);
+
+			//Easy colors accessible via a 10-step ordinal scale
+			var colors = d3.scaleOrdinal(d3.schemeCategory10);
+
+			//Create SVG element
+			var svg = d3.select("body")
+						.append("svg")
+						.attr("width", w)
+						.attr("height", h);
+
+			// Add a group for each row of data
+			var groups = svg.selectAll("g")
+				.data(series)
+				.enter()
+				.append("g")
+				.style("fill", function(d, i) {
+					return colors(i);
+				});
+
+			// Add a rect for each data value
+			var rects = groups.selectAll("rect")
+				.data(function(d) { return d; })
+				.enter()
+				.append("rect")
+				.attr("x", function(d, i) {
+					return xScale(i);
+				})
+				.attr("y", function(d) {
+          //console.log(d[0]);
+          //console.log(d[1]);
+					return yScale(d[1]);
+				})
+				.attr("height", function(d) {
+					return yScale(d[0]) - yScale(d[1]);
+				})
+				.attr("width", xScale.bandwidth());
+});
+		</script>
+	</body>
+</html>
