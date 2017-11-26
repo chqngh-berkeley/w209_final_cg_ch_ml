@@ -32,7 +32,7 @@ $(document).ready(function(){
         .text("");
   d3.csv("./data/electricity_consumption_cleaned.csv", function(error, electricity_data) {
     d3.csv("./data/coal_consumption_cleaned.csv", function(error, coal_data) {
-      d3.csv("./data/co2_emissions_worldwide_cleaned.csv.csv", function(error, co2_data) {
+      d3.csv("./data/co2_emissions_worldwide_cleaned.csv", function(error, co2_data) {
         d3.csv("./data/natural_gas_consumption_cleaned.csv", function(error, natural_gas_data) {
           var consumptionTypes = ['Electricity', 'Coal','CO2 Emissions' ,'Natural Gas'];
           var chosenData = electricity_data;
