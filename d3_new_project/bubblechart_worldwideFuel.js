@@ -88,7 +88,7 @@ $(document).ready(function(){
               if(chosenType == consumptionTypes[2]) {
                 chosenData = co2_data;
               }
-              if(chosenType == consumptionTypes[2]) {
+              if(chosenType == consumptionTypes[3]) {
                 chosenData = natural_gas_data;
               }
               renderChartByYearAndData();
