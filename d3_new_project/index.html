@@ -3,11 +3,89 @@
 	<head>
 		<meta charset="utf-8">
 		<title>D3 Page Template</title>
-		<script type="text/javascript" src="d3.js"></script>
+		<!-- <script type="text/javascript" src="d3.js"></script> -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+		  <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+		<!-- Add our JS and CSS here -->
+		<link rel="stylesheet" href="./index.css">
+		<script src="timeline_co2.js"></script>
+		<script src="scatterplot_emissions.js"></script>
+		<script src="stacked_barchart_fuelTypes.js"></script>
+		<script src="bubblechart_worldwideFuel.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript">
-			// Your beautiful D3 code will go here
-		</script>
+		<div class="container">
+      <div class="starter-template">
+        <h1>Intro</h1>
+        <p class="lead">
+          Curabitur hendrerit luctus erat. Mauris varius consectetur ultricies. Vestibulum quis libero egestas, ornare urna non, auctor magna. Ut non venenatis sem. Fusce luctus est nec arcu viverra mattis. Praesent maximus, ex tempor sollicitudin ornare, metus ex maximus augue, sed pharetra neque augue eget tortor. Nam porta sed augue quis fermentum. Etiam sit amet feugiat diam. Ut efficitur convallis egestas. Vivamus vel justo urna. Phasellus eget mauris eu erat maximus lobortis. Nam et tellus sodales, facilisis augue at, blandit metus. Sed congue felis eu turpis commodo elementum. Sed ullamcorper tellus eros, at sodales est elementum in.
+        </p>
+      </div>
+      <hr />
+      <section id='co2-chart-section'>
+				<h2>CO2 Emissions</h2>
+				<p class="lead">
+					Curabitur hendrerit luctus erat. Mauris varius consectetur ultricies. Vestibulum quis libero egestas, ornare urna non, auctor magna. Ut non venenatis sem. Fusce luctus est nec arcu viverra mattis. Praesent maximus, ex tempor sollicitudin ornare, metus ex maximus augue, sed pharetra neque augue eget tortor. Nam porta sed augue quis fermentum. Etiam sit amet feugiat diam. Ut efficitur convallis egestas. Vivamus vel justo urna. Phasellus eget mauris eu erat maximus lobortis. Nam et tellus sodales, facilisis augue at, blandit metus. Sed congue felis eu turpis commodo elementum. Sed ullamcorper tellus eros, at sodales est elementum in.
+				</p>
+        <svg width="700" height="400"></svg>
+      </section>
+      <hr />
+			<section id='carbon-emissions-section'>
+				<h2>CO2 Emissions by Type</h2>
+				<p class="lead">
+					Curabitur hendrerit luctus erat. Mauris varius consectetur ultricies. Vestibulum quis libero egestas, ornare urna non, auctor magna. Ut non venenatis sem. Fusce luctus est nec arcu viverra mattis. Praesent maximus, ex tempor sollicitudin ornare, metus ex maximus augue, sed pharetra neque augue eget tortor. Nam porta sed augue quis fermentum. Etiam sit amet feugiat diam. Ut efficitur convallis egestas. Vivamus vel justo urna. Phasellus eget mauris eu erat maximus lobortis. Nam et tellus sodales, facilisis augue at, blandit metus. Sed congue felis eu turpis commodo elementum. Sed ullamcorper tellus eros, at sodales est elementum in.
+				</p>
+        <div id='carbon-emission-chart'></div>
+      </section>
+			<hr />
+			<section id='fuelTypes-section'>
+				<h1>Fuel Types</h1>
+				<p class="lead">
+					Curabitur hendrerit luctus erat. Mauris varius consectetur ultricies. Vestibulum quis libero egestas, ornare urna non, auctor magna. Ut non venenatis sem. Fusce luctus est nec arcu viverra mattis. Praesent maximus, ex tempor sollicitudin ornare, metus ex maximus augue, sed pharetra neque augue eget tortor. Nam porta sed augue quis fermentum. Etiam sit amet feugiat diam. Ut efficitur convallis egestas. Vivamus vel justo urna. Phasellus eget mauris eu erat maximus lobortis. Nam et tellus sodales, facilisis augue at, blandit metus. Sed congue felis eu turpis commodo elementum. Sed ullamcorper tellus eros, at sodales est elementum in.
+				</p>
+        <div id='fuelTypes-chart'></div>
+      </section>
+			<hr />
+			<section id='worldwide-electricity-consumption-section'>
+				<h1>World Wide Consumption</h1>
+				<p class="lead">
+					Curabitur hendrerit luctus erat. Mauris varius consectetur ultricies. Vestibulum quis libero egestas, ornare urna non, auctor magna. Ut non venenatis sem. Fusce luctus est nec arcu viverra mattis. Praesent maximus, ex tempor sollicitudin ornare, metus ex maximus augue, sed pharetra neque augue eget tortor. Nam porta sed augue quis fermentum. Etiam sit amet feugiat diam. Ut efficitur convallis egestas. Vivamus vel justo urna. Phasellus eget mauris eu erat maximus lobortis. Nam et tellus sodales, facilisis augue at, blandit metus. Sed congue felis eu turpis commodo elementum. Sed ullamcorper tellus eros, at sodales est elementum in.
+				</p>
+				<h3 id='fuel_type'></h3>
+        <div id='bubble-chart'></div>
+				<div class="row">
+          <div class="col-md-6">
+            <div id="slider"></div>
+            <label for="year">Selected Year:</label>
+            <input type="text" id="year" readonly style="border:0; color:#f6931f; font-weight:bold;">
+          </div>
+					<div class="col-md-3">
+            <label for="">
+              Fuel Consumption Types
+            </label>
+            <select class="form-control" id='sel-energy-types'></select>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </div><!-- /.container -->
+    <footer class='footer'>
+          W209 Final Project by Chet, Chu, and Max
+    </footer>
 	</body>
 </html>
