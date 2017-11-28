@@ -89,7 +89,17 @@ div.tooltip {
   pointer-events: none;
 }
 
-
+#bubble-chart {
+  display: inline-block;
+  width: 700px;
+}
+#consumption-table {
+  display: inline-block;
+  position: absolute;
+}
+.fueltype-selector {
+  margin-top: -35px;
+}
 /*
 	Generic Styling, for Desktops/Laptops
 	*/

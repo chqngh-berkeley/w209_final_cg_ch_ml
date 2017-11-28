@@ -33,14 +33,14 @@
       <div class="starter-template">
         <h1>Intro</h1>
         <p class="lead">
-          Taking aim at preventing the greenhouse effect, the main contributor to global warming, the Obama Administration created legislation, which it titled the Clean Power Plan.  On August 3, 2015, the Obama Administration unveiled The Clean Power Plan, which "established the first national limits on carbon pollution from existing power plants—our nation's single largest source of the pollution fueling climate change" and was "the biggest step" the United States had "ever taken to address climate change." This is heralded as Obama’s greatest policy effort to combat climate change.  
+          Taking aim at preventing the greenhouse effect, the main contributor to global warming, the Obama Administration created legislation, which it titled the Clean Power Plan.  On August 3, 2015, the Obama Administration unveiled The Clean Power Plan, which "established the first national limits on carbon pollution from existing power plants—our nation's single largest source of the pollution fueling climate change" and was "the biggest step" the United States had "ever taken to address climate change." This is heralded as Obama’s greatest policy effort to combat climate change.
         </p>
       </div>
       <hr />
       <section id='co2-chart-section'>
 				<h2>CO2 Emissions</h2>
 				<p class="lead">
-					The primary goal of the CPP is to reduce CO2 emissions by 32% by the year 2030 in comparison to CO2 emissions from 2005. The interactive chart below utilizes data provided by the Environmental Protection Agency (EPA).  Annual statistics on CO2 emissions for the country and state granularity are provided since 1990 with a 1 year lag in release date; 2015 is the most recent data point. 
+					The primary goal of the CPP is to reduce CO2 emissions by 32% by the year 2030 in comparison to CO2 emissions from 2005. The interactive chart below utilizes data provided by the Environmental Protection Agency (EPA).  Annual statistics on CO2 emissions for the country and state granularity are provided since 1990 with a 1 year lag in release date; 2015 is the most recent data point.
 				</p>
         <svg width="700" height="400"></svg>
       </section>
@@ -48,7 +48,7 @@
 			<section id='carbon-emissions-section'>
 				<h2>CO2 Emissions by Type</h2>
 				<p class="lead">
-					Curabitur hendrerit luctus erat. Mauris varius consectetur ultricies. Vestibulum quis libero egestas, ornare urna non, auctor magna. Ut non venenatis sem. Fusce luctus est nec arcu viverra mattis. Praesent maximus, ex tempor sollicitudin ornare, metus ex maximus augue, sed pharetra neque augue eget tortor. Nam porta sed augue quis fermentum. Etiam sit amet feugiat diam. Ut efficitur convallis egestas. Vivamus vel justo urna. Phasellus eget mauris eu erat maximus lobortis. Nam et tellus sodales, facilisis augue at, blandit metus. Sed congue felis eu turpis commodo elementum. Sed ullamcorper tellus eros, at sodales est elementum in.
+					TBD
 				</p>
         <div id='carbon-emission-chart'></div>
       </section>
@@ -56,27 +56,37 @@
 			<section id='fuelTypes-section'>
 				<h1>Fuel Types</h1>
 				<p class="lead">
-					Curabitur hendrerit luctus erat. Mauris varius consectetur ultricies. Vestibulum quis libero egestas, ornare urna non, auctor magna. Ut non venenatis sem. Fusce luctus est nec arcu viverra mattis. Praesent maximus, ex tempor sollicitudin ornare, metus ex maximus augue, sed pharetra neque augue eget tortor. Nam porta sed augue quis fermentum. Etiam sit amet feugiat diam. Ut efficitur convallis egestas. Vivamus vel justo urna. Phasellus eget mauris eu erat maximus lobortis. Nam et tellus sodales, facilisis augue at, blandit metus. Sed congue felis eu turpis commodo elementum. Sed ullamcorper tellus eros, at sodales est elementum in.
+					TBD
 				</p>
         <div id='fuelTypes-chart'></div>
       </section>
 			<hr />
 			<section id='worldwide-electricity-consumption-section'>
-				<h1>World Wide Consumption</h1>
+				<h1>World Wide CO2 emissions and energy consumptions</h1>
 				<p class="lead">
-					Curabitur hendrerit luctus erat. Mauris varius consectetur ultricies. Vestibulum quis libero egestas, ornare urna non, auctor magna. Ut non venenatis sem. Fusce luctus est nec arcu viverra mattis. Praesent maximus, ex tempor sollicitudin ornare, metus ex maximus augue, sed pharetra neque augue eget tortor. Nam porta sed augue quis fermentum. Etiam sit amet feugiat diam. Ut efficitur convallis egestas. Vivamus vel justo urna. Phasellus eget mauris eu erat maximus lobortis. Nam et tellus sodales, facilisis augue at, blandit metus. Sed congue felis eu turpis commodo elementum. Sed ullamcorper tellus eros, at sodales est elementum in.
+					USA has been a leading producer of CO2 for the past 25 years,
+					overtaken by China only recently. However, the US has reduced the Coal
+					consumption significantly in the past 10-15 years. The electricy consumption
+					increased in the 90s but has stayed stagnant in the past 10 years. The US remains
+					the leading consumer of Natural Gas in the world.
 				</p>
 				<h3 id='fuel_type'></h3>
         <div id='bubble-chart'></div>
+				<div id='consumption-table'>
+					<span id='unitOfMeasure-container'>
+						Unit of Measure: <span id='unitOfMeasure'></span>
+					</span>
+				</div>
+
 				<div class="row">
           <div class="col-md-6">
             <div id="slider"></div>
             <label for="year">Selected Year:</label>
             <input type="text" id="year" readonly style="border:0; color:#f6931f; font-weight:bold;">
           </div>
-					<div class="col-md-3">
+					<div class="col-md-3 fueltype-selector">
             <label for="">
-              Fuel Consumption Types
+              Types
             </label>
             <select class="form-control" id='sel-energy-types'></select>
           </div>

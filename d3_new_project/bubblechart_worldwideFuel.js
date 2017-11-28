@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  var margin = {top: 20, right: 20, bottom: 20, left: 100},
-      width = 960 - margin.left - margin.right,
+  var margin = {top: 20, right: 20, bottom: 20, left: 50},
+      width = 700 - margin.left - margin.right,
       height = 600 - margin.top - margin.bottom;
   function __getSVGElement() {
       var svg = d3.select("#bubble-chart").append("svg")
@@ -10,12 +10,22 @@ $(document).ready(function(){
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
       return svg;
   }
-  // var svg_ = d3.select("#bubble-chart").append("svg")
-  //         .attr("width", width + margin.left + margin.right)
-  //         .attr("height", height + margin.top + margin.bottom)
-  //       .append("g")
-  //         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-  //
+  function getUnitOfMeasure(chosenType) {
+    var unitOfMeasure = '';
+    if(chosenType == 'Electricity') {
+      unitOfMeasure = '(TWh)'
+    }
+    if(chosenType == 'Coal') {
+      unitOfMeasure = '(Mt)'
+    }
+    if(chosenType == 'Natural Gas') {
+      unitOfMeasure = '(bcm)'
+    }
+    if(chosenType == 'CO2 Emissions') {
+      unitOfMeasure = '(MtCO2)'
+    }
+    return unitOfMeasure;
+  }
 
   var tooltip = d3
         .select('body')
@@ -35,21 +45,56 @@ $(document).ready(function(){
       d3.csv("./data/co2_emissions_worldwide_cleaned.csv", function(error, co2_data) {
         d3.csv("./data/natural_gas_consumption_cleaned.csv", function(error, natural_gas_data) {
           var consumptionTypes = ['Electricity', 'Coal','CO2 Emissions' ,'Natural Gas'];
-          var chosenData = electricity_data;
+          var chosenData = co2_data;
           var chosenYear = 1996;
-          var chosenType = consumptionTypes[0];
-
-          $('#fuel_type').text('Electricity Consumption')
+          var chosenType = consumptionTypes[2];
           function getDataByYear(year) {
             var selectedData = []
             for(var i = 0; i < chosenData.length; i ++) {
+              if(!chosenData[i][year]) {
+                return []
+              }
               selectedData.push({key: chosenData[i].Country, value: chosenData[i][year]})
             }
             return selectedData;
           }
+          function tabulate(data, columns) {
+        		var table = d3.select('#consumption-table').append('table')
+        		var thead = table.append('thead')
+        		var	tbody = table.append('tbody');
+        		// append the header row
+        		thead.append('tr')
+        		  .selectAll('th')
+        		  .data(columns).enter()
+        		  .append('th')
+        		    .text(function (column) {
+                  if(column == 'key') { return 'Country'}
+                  if(column == 'value') { return 'Consumed'; }
+                  if(column == 'percChange') { return '% change to previous year'; }
+                });
+        		// create a row for each object in the data
+        		var rows = tbody.selectAll('tr')
+        		  .data(data)
+        		  .enter()
+        		  .append('tr');
+        		// create a cell in each row for each column
+        		var cells = rows.selectAll('td')
+        		  .data(function (row) {
+        		    return columns.map(function (column) {
+        		      return {column: column, value: row[column]};
+        		    });
+        		  })
+        		  .enter()
+        		  .append('td')
+        		    .text(function (d) {
+                  return d.value;
+                });
+        	  return table;
+        	}
+
           function initYearUpdate() {
             $( "#slider" ).slider({
-                min: 1996,
+                min: 1991,
                 max: 2016,
                 step: 1,
                 slide: function( event, ui ) {
@@ -66,7 +111,7 @@ $(document).ready(function(){
             d3.select('#bubble-chart').selectAll("bubble").remove();
             d3.select('#bubble-chart').selectAll("circle").remove();
             d3.select('#bubble-chart').selectAll("node").remove();
-            d3.select('#bubble-chart').selectAll("table").remove();
+            d3.select('#consumption-table').selectAll("table").remove();
           }
 
           function fillEnergyTypes() {
@@ -76,6 +121,7 @@ $(document).ready(function(){
               var item = consumptionTypes[idx]
               s.options[i++] = new Option(item, item, true, false);
             }
+            s.value = chosenType;
             $('#sel-energy-types').change(function() {
               chosenType = this.value;
               $('#fuel_type').text(chosenType);
@@ -97,7 +143,33 @@ $(document).ready(function(){
           function renderChartByYearAndData() {
             resetChart();
             var d = getDataByYear(chosenYear);
+            var prev_d = getDataByYear(parseInt(chosenYear)-1);
             renderChart(d, __getSVGElement(), chosenYear, chosenType);
+            $('#unitOfMeasure').text(getUnitOfMeasure(chosenType))
+            $('#fuel_type').text(chosenType)
+            function getTopTen(d, prev_d) {
+              var sorted_arr = d.sort(function(a,b) {
+                return parseFloat(b.value) - parseFloat(a.value)
+              })
+              var topTenFromThisYear = sorted_arr.slice(0,10)
+              var retArr = []
+              for(var i =0; i< topTenFromThisYear.length; i++) {
+                var curr_item = topTenFromThisYear[i]
+                var prev_item = prev_d.filter(function(item){
+                  return curr_item.key == item.key
+                })[0];
+                if(prev_item) {
+                  var percChange = (curr_item.value - prev_item.value) /  prev_item.value;
+                  curr_item['percChange'] = (percChange*100).toFixed(1) + '%'
+                } else {
+                  curr_item['percChange'] = 'N/A'
+                }
+                retArr.push(curr_item)
+              }
+              return retArr
+            }
+            var topTen = getTopTen(d,prev_d)
+            tabulate(topTen, ['key', 'value','percChange']);
           }
           fillEnergyTypes();
           initYearUpdate();
@@ -137,19 +209,8 @@ $(document).ready(function(){
                   return "translate(" + d.x + "," + d.y + ")";
               })
               .on("mouseover", function(d) {
-                  var unitOfMeasure = ''
-                  if(chosenType == 'Electricity') {
-                    unitOfMeasure = '(TWh)'
-                  }
-                  if(chosenType == 'Coal') {
-                    unitOfMeasure = '(Mt)'
-                  }
-                  if(chosenType == 'Natural Gas') {
-                    unitOfMeasure = '(bcm)'
-                  }
-                  if(chosenType == 'CO2 Emissions') {
-                    unitOfMeasure = '(MtCO2)'
-                  }
+                  var unitOfMeasure = getUnitOfMeasure(chosenType)
+
                   tooltip.html('<span>' + d.data.key + ':'+ d.data.value+ unitOfMeasure+' </span>');
                   return tooltip.style("visibility", "visible");
               })
