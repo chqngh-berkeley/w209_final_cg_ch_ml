@@ -1,7 +1,7 @@
 body {
   padding-top: 50px;
   font: 10px sans-serif;
-  background-color: antiquewhite;
+  /*background-color: antiquewhite;*/
 }
 
 .starter-template {
@@ -32,6 +32,13 @@ body {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
+}
+
+ul {
+  font-size: 14px;
+}
+li {
+  line-height: 1.5;
 }
 
 .dot {
@@ -93,12 +100,22 @@ div.tooltip {
   display: inline-block;
   width: 700px;
 }
-#consumption-table {
+#control-chart {
   display: inline-block;
   position: absolute;
+  width: 300px;
 }
 .fueltype-selector {
-  margin-top: -35px;
+}
+
+
+.ui-slider-tick-mark{
+display:inline-block;
+width:2px;
+background:black;
+height:5px;
+position:absolute;
+top: 0px;
 }
 /*
 	Generic Styling, for Desktops/Laptops
@@ -123,6 +140,7 @@ div.tooltip {
 		padding: 6px;
 		border: 1px solid #ccc;
 		text-align: left;
+    font-size: 14px;
 	}
 
 	th.des:after {
@@ -131,15 +149,6 @@ div.tooltip {
 
     th.aes:after {
       content: "\21E7";
-    }
-
-    .ui-slider-tick-mark{
-      display:inline-block;
-      width:2px;
-      /*background:black;*/
-      /*height:16px;*/
-      position:absolute;
-      top:-10px;
     }
 
 /* CO 2 chart*/

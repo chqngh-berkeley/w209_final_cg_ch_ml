@@ -46,19 +46,17 @@
       </section>
       <hr />
 			<section id='carbon-emissions-section'>
-				<h2>CO2 Emissions by Type</h2>
+				<h2>CO2 Emissions Differ by Fuel Type</h2>
 				<p class="lead">
-					TBD
+						How does the CPP propose states achieve the reduction of CO2? States are required to submit a plan to the EPA detailing how it will reduce CO2 emissions from fossil fuel burning facilities.
 				</p>
-        <div id='carbon-emission-chart'></div>
-      </section>
-			<hr />
-			<section id='fuelTypes-section'>
-				<h1>Fuel Types</h1>
-				<p class="lead">
-					TBD
-				</p>
-        <div id='fuelTypes-chart'></div>
+				<ul>
+					<li>increasing the generation efficiency of existing fossil fuel plants</li>
+					<li>substituting lower carbon dioxide emitting natural gas generation for coal powered generation</li>
+					<li>substituting generation from new zero carbon dioxide emitting renewable sources for fossil fuel powered generation</li>
+				</ul>
+				<i>The figures below shows each individual power plant in the US plotted with its power output vs CO2 emissions in tons, illustrating a distinct profile between coal, gas, and non fossil fuel generating units.</i>
+        <div id='scatterplot-emissions'></div>
       </section>
 			<hr />
 			<section id='worldwide-electricity-consumption-section'>
@@ -72,27 +70,44 @@
 				</p>
 				<h3 id='fuel_type'></h3>
         <div id='bubble-chart'></div>
-				<div id='consumption-table'>
-					<span id='unitOfMeasure-container'>
-						Unit of Measure: <span id='unitOfMeasure'></span>
-					</span>
-				</div>
+				<div id='control-chart'>
+					<div id='consumption-table'>
+						<span id='unitOfMeasure-container'>
+							Unit of Measure: <span id='unitOfMeasure'></span>
+						</span>
+					</div>
+					<br />
+					<div id='slider-container'>
+						<label for="year">Selected Year:</label>
+						<input type="text" id="year" readonly style="border:0;font-size: 1.5em; font-weight:bold;">
+						<div id="slider"></div>
 
+					</div>
+					<br />
+					<div class="fueltype-selector">
+						<label for="">
+							Types
+						</label>
+						<select class="form-control" id='sel-energy-types'></select>
+					</div>
+				</div>
 				<div class="row">
-          <div class="col-md-6">
-            <div id="slider"></div>
-            <label for="year">Selected Year:</label>
-            <input type="text" id="year" readonly style="border:0; color:#f6931f; font-weight:bold;">
-          </div>
-					<div class="col-md-3 fueltype-selector">
-            <label for="">
-              Types
-            </label>
-            <select class="form-control" id='sel-energy-types'></select>
-          </div>
+
         </div>
+				<i>*All data taken from <a target='_blank' href="https://yearbook.enerdata.net/">enerdata.net</a></i>
       </section>
       <hr />
+			<section id='fuelTypes-section'>
+				<h1>Past, Present, & Future Power Plants</h1>
+				<p class="lead">
+					The CPP was met with much controversy, however, as opponents cited that it would hurt the economy by eliminating job in the coal industry and drastically reducing job in other industries such as cement and steel production. For these reasons, the Trump Administration repealed the CPP on October 10, 2017. In the chart below, a history of electric generating units constructed in the United States is presented as well as past and planned retirements through 2055, which are indicated in the bottom plot.
+				</p>
+        <div id='barchart-timeline'>
+					<svg width="960" height="200"></svg>
+					<svg id = "viz2" width="960" height="200"></svg>
+				</div>
+      </section>
+			<hr />
     </div><!-- /.container -->
     <footer class='footer'>
           W209 Final Project by Chet, Chu, and Max

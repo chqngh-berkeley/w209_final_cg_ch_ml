@@ -25,7 +25,7 @@ $(document).ready(function(){
   //     .scale(y)
   //     .orient("left"));
 
-  var svg = d3.select("#carbon-emission-chart").append("svg")
+  var svg = d3.select("#scatterplot-emissions").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -40,7 +40,8 @@ $(document).ready(function(){
       d.PLCO2AN = +d.PLCO2AN;
     });
 
-    x.domain(d3.extent(data, function(d) { return d.PLNGENAN; })).nice();
+    //x.domain(d3.extent(data, function(d) { return d.PLNGENAN; })).nice();
+    x.domain([0, d3.max(data, function(d){return d.PLNGENAN;})])
     y.domain(d3.extent(data, function(d) { return d.PLCO2AN; })).nice();
 
     svg.append("g")
@@ -72,6 +73,7 @@ $(document).ready(function(){
     svg.selectAll(".dot")
         .data(data)
       .enter().append("circle")
+      .filter(function(d) { return d.PLNGENAN > 0 })
         .attr("class", "dot")
         .attr("r", 3.5)
         .attr("cx", function(d) { return x(d.PLNGENAN); })
@@ -87,22 +89,23 @@ $(document).ready(function(){
 
          //Update the tooltip position and value
          d3.select("#tooltip")
-           .style("left", 400 + "px")
-           .style("top", 400 + "px")
+            .style("left", (d3.event.pageX + 15) + "px")
+            .style("top", (d3.event.pageY - 30) + "px")
+            .style("opacity", .9)
            .select("#name")
            .text(d.PNAME);
 
          d3.select("#tooltip")
            .select("#loc")
-           .text(d.CNTYNAME + " County, ", + d.PLSTATABB);
+           .text(d.CNTYNAME + " County, " + d.PSTATABB);
 
          d3.select("#tooltip")
            .select("#CO2")
-           .text(d.PLCO2AN);
+           .text(d3.format(",.0f")(d.PLCO2AN));
 
          d3.select("#tooltip")
            .select("#pow")
-           .text(d.PLNGENAN);
+           .text(d3.format(",.0f")(d.PLNGENAN));
 
          //Show the tooltip
          d3.select("#tooltip").classed("hidden", false);

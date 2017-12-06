@@ -62,6 +62,7 @@ $(document).ready(function(){
         		var table = d3.select('#consumption-table').append('table')
         		var thead = table.append('thead')
         		var	tbody = table.append('tbody');
+            console.log(chosenType)
         		// append the header row
         		thead.append('tr')
         		  .selectAll('th')
@@ -69,7 +70,13 @@ $(document).ready(function(){
         		  .append('th')
         		    .text(function (column) {
                   if(column == 'key') { return 'Country'}
-                  if(column == 'value') { return 'Consumed'; }
+                  if(column == 'value') {
+                    if(chosenType == consumptionTypes[2]) {
+                      return 'Emitted'
+                    } else {
+                      return 'Consumed';
+                    }
+                  }
                   if(column == 'percChange') { return '% change to previous year'; }
                 });
         		// create a row for each object in the data
@@ -103,7 +110,20 @@ $(document).ready(function(){
                   renderChartByYearAndData();
                 }
             });
+            setSliderTicks();
             $( "#year" ).val($( "#slider" ).slider( "value" ) );
+          }
+
+          function setSliderTicks(){
+              var $slider =  $('#slider');
+              var max =  $slider.slider("option", "max");
+              var min =  $slider.slider("option", "min");
+              var spacing =  100 / (max - min);
+
+              $slider.find('.ui-slider-tick-mark').remove();
+              for (var i = 1; i < max - min ; i++) {
+                  $('<span class="ui-slider-tick-mark"></span>').css('left', (spacing * i) +  '%').appendTo($slider);
+               }
           }
 
           function resetChart() {
@@ -125,6 +145,8 @@ $(document).ready(function(){
             $('#sel-energy-types').change(function() {
               chosenType = this.value;
               $('#fuel_type').text(chosenType);
+              // var $th = $("table thead tr th").eq(1)
+              // $th.text('Consumed')
               if(chosenType == consumptionTypes[0]) {
                 chosenData = electricity_data;
               }
@@ -133,6 +155,7 @@ $(document).ready(function(){
               }
               if(chosenType == consumptionTypes[2]) {
                 chosenData = co2_data;
+                // $th.text('Emitted')
               }
               if(chosenType == consumptionTypes[3]) {
                 chosenData = natural_gas_data;
@@ -242,7 +265,7 @@ $(document).ready(function(){
               })
               .attr("font-family", "sans-serif")
               .attr("font-size", function(d){
-                  return d.r/5;
+                  return d.r/3.5;
               })
               .attr("fill", "white");
 

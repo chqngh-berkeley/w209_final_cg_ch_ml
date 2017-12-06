@@ -1,12 +1,13 @@
 $(document).ready(function(){
-  
+
   var State = [],
       Year = [],
       CO2 = [];
       plotData = [];
+      format = d3.format(",.2f")
+
 
   d3.csv("./data/CO2emissions.csv", function(data) {
-      // console.log(data)
       data.map(function(d){
           State.push(d.State);
           Year.push(+d.Year);
@@ -23,25 +24,55 @@ $(document).ready(function(){
 
           var svg = d3.select("svg");
 
-          var xpad = 40;
+          var xpad = 100;
 
           var xmax = d3.max(plotData1, function(z) {return z[0];})+1;
           var xmin = d3.min(plotData1, function(z) {return z[0];});
           var ymax = d3.max(plotData1, function(z) {return z[1];})*1.1;
-          var ymin = d3.min(plotData1, function(z) {return z[1];})*0.9;
+          var ymin = d3.min(plotData1, function(z) {return z[1];})*0.5;
 
           var xScale = d3.scaleLinear()
                          .domain([xmin, xmax])
                          .range([xpad, 550]);
 
           var xAxis = d3.axisBottom(xScale)
+                        .ticks(14)
                         .tickFormat(d3.format("d"));
+
+          function make_x_axis() {
+                      return d3.axisBottom()
+                               .scale(xScale)
+                               .ticks(14);
+                  }
+
+          svg.append("g")
+             .attr("class", "gridx")
+             .attr("transform", "translate("+xpad+",325)")
+             .call(make_x_axis()
+             .tickSize(-400, 0, 0)
+             .tickFormat("")
+              )
 
           var yScale = d3.scaleLinear()
                          .domain([ymin, ymax])
                          .range([325, 0]);
 
-          var yAxis = d3.axisLeft(yScale);
+          var yAxis = d3.axisLeft(yScale)
+                        .ticks(10);
+
+          function make_y_axis() {
+                      return d3.axisLeft()
+                               .scale(yScale)
+                               .ticks(10);
+                  }
+
+          svg.append("g")
+             .attr("class", "gridy")
+             .attr("transform", "translate("+xpad*2+",0)")
+             .call(make_y_axis()
+             .tickSize(-450, 0, 0)
+             .tickFormat("")
+              )
 
           var div = d3.select("body")
                       .append("div")
@@ -58,14 +89,15 @@ $(document).ready(function(){
              .attr("transform", "translate("+xpad*2+",0)")
              .call(yAxis);
 
-          var xAxLab = (700 - xpad)/2
+
+          var xAxLab = (700 - xpad)/2 + 150
           svg.append("text")
              .attr("transform","translate("+xAxLab+",370)")
              .style("text-anchor", "middle")
              .text("Date");
 
           svg.append("text")
-             .attr("transform","translate("+xpad*.25+",210) rotate(-90)")
+             .attr("transform","translate(5,140) rotate(0)")
              .attr("dy", "1em")
              .text("MM Metric Tons");
 
@@ -86,7 +118,8 @@ $(document).ready(function(){
                              .style("opacity", .9)
                              .style("left", (d3.event.pageX + 15) + "px")
                              .style("top", (d3.event.pageY - 30) + "px")
-                             .text(d[0]+ "\n" + d[1]);
+                             .attr("dy","0em")
+                             .text(d[0] + " "+format(d[1]));
 
               })
               .on("mouseout", function(){
@@ -112,7 +145,7 @@ $(document).ready(function(){
       dropdown.unshift("United States");
       dropdown.splice(-1,1);
 
-      var select = d3.select('#co2-chart-section')
+      var select = d3.select('body')
                   .append('select')
                   .attr('class','select')
                   .on('change', newPlot)
@@ -121,6 +154,25 @@ $(document).ready(function(){
                         .data(dropdown).enter()
                         .append('option')
                           .text(function (d) { return d; });
+
+
+
+      var line2 = d3.line()
+                       .x(function(d) {return (xScale(d[0])+xpad);})
+                       .y(function(d) {return yScale(plotData1[15][1]*0.65);});
+
+
+      svg.append("path")
+             .attr("class", "targetLevel")
+             .attr("d", line2(plotData1))
+
+
+      svg.append("text")
+.attr("class", "targetLabel")
+.attr("x", xpad*2)
+.attr("y", yScale(plotData1[15][1]*0.65) - 7)
+.text("Target Level 35% of 2005:  "+format(plotData1[15][1]*0.65))
+
 
       function newPlot() {
           var newArea = d3.select('select').property('value')
@@ -138,9 +190,7 @@ $(document).ready(function(){
           xmax = d3.max(plotData1, function(z) {return z[0];})+1;
           xmin = d3.min(plotData1, function(z) {return z[0];});
           ymax = d3.max(plotData1, function(z) {return z[1];})*1.1;
-          ymin = d3.min(plotData1, function(z) {return z[1];})*0.9;
-
-          // console.log(ymin)
+          ymin = d3.min(plotData1, function(z) {return z[1];})*0.5;
 
           xScale = d3.scaleLinear()
                      .domain([xmin, xmax])
@@ -161,6 +211,16 @@ $(document).ready(function(){
           yAxis = d3.axisLeft(yScale);
 
           //Updates axis--------------------
+
+          svg.selectAll("g.gridy")
+             .transition()
+             .duration(500)
+             .attr("transform", "translate("+xpad*2+",0)")
+             .call(make_y_axis()
+             .tickSize(-450, 0, 0)
+             .tickFormat("")
+              )
+
           svg.selectAll("g.xAxis")
              .attr("transform", "translate("+xpad+",325)")
              .call(xAxis);
@@ -186,6 +246,20 @@ $(document).ready(function(){
              .transition()
              .duration(800)
              .attr("d", line(plotData1))
+
+
+          svg.selectAll("path.targetLevel")
+             .transition()
+             .duration(800)
+             .attr("d", line2(plotData1))
+
+          svg.selectAll(".targetLabel")
+              .transition()
+              .duration(800)
+    .attr("y", yScale(plotData1[15][1]*0.65) - 7)
+              .text("Target Level 35% of 2005:  "+format(plotData1[15][1]*0.65))
+
       };
+
     });
 })
