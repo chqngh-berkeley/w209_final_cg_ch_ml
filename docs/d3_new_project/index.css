@@ -1,0 +1,308 @@
+body {
+  padding-top: 50px;
+  font: 10px sans-serif;
+  /*background-color: antiquewhite;*/
+}
+
+.starter-template {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.filter-container {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+#chart {
+  display: inline-block;
+}
+#filter {
+  width: 100%;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+ul {
+  font-size: 14px;
+}
+li {
+  line-height: 1.5;
+}
+
+.dot {
+  stroke: #000;
+}
+#tooltip {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  /*padding: 10px;*/
+  background-color: white;
+  /*-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;*/
+  /*-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);*/
+  pointer-events: none;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
+
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: #111;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+#bubble-chart {
+  display: inline-block;
+  width: 700px;
+}
+#control-chart {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+}
+.fueltype-selector {
+}
+
+
+.ui-slider-tick-mark{
+display:inline-block;
+width:2px;
+background:black;
+height:5px;
+position:absolute;
+top: 0px;
+}
+/*
+	Generic Styling, for Desktops/Laptops
+	*/
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	/* Zebra striping */
+	tr:nth-of-type(odd) {
+		background: #eee;
+	}
+	th {
+		background: #333;
+		color: white;
+		font-weight: bold;
+		cursor: s-resize;
+		background-repeat: no-repeat;
+        background-position: 3% center;
+	}
+	td, th {
+		padding: 6px;
+		border: 1px solid #ccc;
+		text-align: left;
+    font-size: 14px;
+	}
+
+	th.des:after {
+      content: "\21E9";
+    }
+
+    th.aes:after {
+      content: "\21E7";
+    }
+
+/* CO 2 chart*/
+
+.pt {
+        stroke: #000;
+        stroke-width: 1.1px;
+    }
+
+.line {
+         fill: none;
+         stroke: darkslateblue;
+         stroke-width: 2px;
+         stroke-dasharray: 3px 3px;
+      }
+
+div.tooltip {
+                position: absolute;
+                text-align: center;
+                width: 55px;
+                height: 28px;
+                padding: 2px;
+                font: 12px sans-serif;
+                background: white;
+                border: 0px;
+                border-radius: 8px;
+                box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+                pointer-events: none;
+            }
+
+select {
+            width: 150px;
+            position: absolute;
+          }
+
+
+
+
+
+
+
+
+
+
+
+.xAxis2 path {
+  fill: none;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.yAxis2 path {
+  fill: none;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+div1.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  height: 16px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: white;
+  border: 0px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+#tooltip {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  /*padding: 10px;*/
+  background-color: white;
+  border-radius: 8px;
+  /*-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;*/
+  /*-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);*/
+  pointer-events: none;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+
+
+.axis .domain {
+  display: none;
+}
+
+#tooltip1 {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  /*padding: 10px;*/
+  background-color: white;
+  border-radius: 8px;
+  /*-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;*/
+  /*-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);*/
+  pointer-events: none;
+}
+
+#tooltip1.hidden {
+  display: none;
+}
+
+#tooltip1 p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
