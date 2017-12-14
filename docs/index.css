@@ -82,6 +82,9 @@ li {
   display: none;
 }
 
+#co2-text-container {
+    padding: 10%;
+}
 
 div.tooltip {
   position: absolute;
