@@ -188,7 +188,69 @@ select {
 
 
 
+          .pt {
+                      stroke: #000;
+                      stroke-width: 1.1px;
+                  }
 
+                  .line {
+                      fill: none;
+                      stroke: darkslateblue;
+                      stroke-width: 2px;
+                      stroke-dasharray: 3px 3px;
+                  }
+
+                  div.tooltip {
+                      position: absolute;
+                      text-align: center;
+                      width: 45px;
+                      height: 28px;
+                      padding: 2px;
+                      font: 12px sans-serif;
+                      background: white;
+                      border: 0px;
+                      border-radius: 8px;
+                      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                      pointer-events: none;
+                  }
+
+                  /*select {
+                      width: 150px;
+                      position: absolute;
+                      left: 10px;
+                      top: 80px;
+                  }*/
+
+                  .gridx .tick {
+                      stroke: lightgrey;
+                      stroke-opacity: 0.2;
+                      shape-rendering: crispEdges;
+                  }
+
+                  .gridx path {
+                      stroke-width: 0;
+                  }
+
+                  .gridy .tick {
+                      stroke: lightgrey;
+                      stroke-opacity: 0.2;
+                      shape-rendering: crispEdges;
+                  }
+
+                  .gridy path {
+                      stroke-width: 0;
+                  }
+
+                  .targetLevel {
+                      stroke: red;
+                      stroke-dasharray: 2, 3;
+                  }
+
+                  .targetLabel {
+                      font-family: Helvetica, sans-serif;
+                      font-size: 12px;
+                      fill: red;
+                  }
 
 
 
@@ -260,7 +322,10 @@ div1.tooltip {
   line-height: 20px;
 }
 
-
+#co2-chart-section {
+  margin-left: -20%;
+  margin-right: -20%;
+}
 
 
 .axis .domain {
